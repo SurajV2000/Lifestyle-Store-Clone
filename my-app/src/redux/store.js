@@ -1,5 +1,11 @@
 import {applyMiddleware, combineReducers, legacy_createStore,compose} from "redux"
 import thunk from "redux-thunk";
+import {reducer as MenReducer} from "./MenReducer/reducer"
+
+
+const rootReducer = combineReducers({
+   MenReducer
+  });
 import {AuthReducer} from "../redux/authReducer/reducer"
 
 
