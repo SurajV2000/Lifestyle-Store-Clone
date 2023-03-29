@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Admin from './pages/Admin';
+
 import { Cart } from './pages/Cart';
+
 
 function App() {
   return (
     <div className="App">
-       <Cart/>
+
+      <Admin/>
+      <Cart/>
+
     </div>
   );
 }
