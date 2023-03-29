@@ -1,10 +1,17 @@
-import './App.css';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
+
+
+import Admin from './pages/Admin';
+
+import { Cart } from './pages/Cart';
+
+
 function App() {
   return (
     <div className="App">
-      
+
+      <Admin/>
+      <Cart/>
+
     </div>
   );
 }
