@@ -8,5 +8,18 @@ const rootReducer = combineReducers({
   });
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
+
+// import {AuthReducer} from "../redux/authReducer/reducer"
+
+
+const middleware = applyMiddleware(thunk);
+
+const composeEnhancers =
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const reducers = combineReducers({
+    
+    // auth: AuthReducer,
+});
   
   export const store = legacy_createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
