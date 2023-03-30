@@ -4,9 +4,9 @@ import React from "react";
 
 const Card = ({ image, price, title, discount }) => {
   return (
-    <Box  width={"100%"} textAlign="left" height={"510px"}>
+    <Box borderRadius={"20px"} width={"100%"} textAlign="left" height={"510px"}>
       <Box>
-        <Image  src={image}></Image>
+        <Image borderRadius={"20px"} src={image}></Image>
         <Heading paddingTop={"8px"} size="md">
           ₹{price}
         </Heading>
@@ -14,6 +14,7 @@ const Card = ({ image, price, title, discount }) => {
           {title}{" "}
         </Text>
       </Box>
+      
     </Box>
   );
 };

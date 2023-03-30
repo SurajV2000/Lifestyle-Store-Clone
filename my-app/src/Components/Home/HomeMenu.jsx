@@ -12,7 +12,6 @@ const HomeMenu = () => {
             pos="relative"
             align="center"
             display={{ base: "none", lg: "Flex" }}
-
             width="36%"
       gap={5}
 
@@ -27,7 +26,6 @@ const HomeMenu = () => {
                 align={"center"}
                 width="15%"
                 _hover={{ color: "#f89f17" }}
-
 
             >
                 <Link to="#">Women</Link>
