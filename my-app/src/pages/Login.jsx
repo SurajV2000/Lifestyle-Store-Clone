@@ -12,8 +12,20 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
-  
+import { useState,useEffect } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { Loginfunction } from "../redux/authreducer/action";
+import { saveData } from "../utils/localStorageData";
+
+import { useReducer } from "react";
   export default function Login() {
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+    
+   
+
     return (
       <Flex
         minH={'100vh'}
@@ -35,11 +47,11 @@ import {
             <Stack spacing={4}>
               <FormControl id="email">
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
               </FormControl>
               <FormControl id="password">
                 <FormLabel>Password</FormLabel>
-                <Input type="password" />
+                <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
               </FormControl>
               <Stack spacing={10}>
                 <Stack
@@ -50,6 +62,7 @@ import {
                   <Link color={'blue.400'}>Forgot password?</Link>
                 </Stack>
                 <Button
+                 
                   bg={'blue.400'}
                   color={'white'}
                   _hover={{
