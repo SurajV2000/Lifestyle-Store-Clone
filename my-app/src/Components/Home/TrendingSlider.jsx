@@ -77,9 +77,9 @@ export default class TrendingSlider extends Component {
                 <Slider {...settings} >
 
                     {data.map((item,i)=>{
-                        return <Box borderRadius={"8px"} key={i}>
-                        <Image borderRadius={"8px"} width={"93%"} margin="auto" src={item}   />
-                        <Text fontWeight={"bold"}>Up To 50% Off</Text>
+                        return <Box borderRadius={"20px"}  key={i}>
+                        <Image borderRadius={"20px"}  width={"93%"} margin="auto" src={item}   />
+                        <Text fontWeight={"bold"} textAlign="center">Up To 50% Off</Text>
                     </Box>
                     })}
 
