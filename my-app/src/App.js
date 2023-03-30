@@ -6,6 +6,7 @@ import { Men } from './pages/Men';
 import Admin from './pages/Admin';
 
 import { Cart } from './pages/Cart';
+// import {Checkout} from './pages/Checkout'
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <Men/>
       <Admin/>
       <Cart/>
-      
+      {/* <Checkout/> */}
 
     </div>
   );
