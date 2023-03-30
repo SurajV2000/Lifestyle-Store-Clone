@@ -7,6 +7,7 @@ import Admin from './pages/Admin';
 
 
 import { Cart } from './pages/Cart';
+// import {Checkout} from './pages/Checkout'
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
@@ -25,6 +26,8 @@ function App() {
     
       
       <Admin/>
+      <Cart/>
+      {/* <Checkout/> */}
       
 
     </div>
