@@ -51,7 +51,7 @@
 
   .dropDown:hover > .drop-down-content {
     height: 55vh;
-    background-color:#fdfdfd
+    background-color:#fdfdfd;
   }
   .dropDown {
     font-weight: 700;
