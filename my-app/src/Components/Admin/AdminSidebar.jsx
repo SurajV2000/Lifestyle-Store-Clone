@@ -4,11 +4,12 @@ import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import AdminProduct from './AdminProduct';
+import {MdOutlineAddCircleOutline } from "react-icons/md";
 
 
 const sidebarData=[
 {title:"Products",icon:<MdOutlineProductionQuantityLimits/>,link:"/products"},
-{title:"Manage Product",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
+{title:"Add Product",icon:<MdOutlineAddCircleOutline/>,link:"/manageProduct"},
 {title:"Manage Product",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
 {title:"Manage Product",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
 
