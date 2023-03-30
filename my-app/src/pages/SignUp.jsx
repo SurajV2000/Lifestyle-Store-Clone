@@ -13,58 +13,109 @@ import {
     Text,
     useColorModeValue,
     Link,
-    Alert,
-    AlertIcon,
+    useToast
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-import {
-    loadingToggleAction,
-    signupAction,
-} from "../redux/authReducer/action"
-import { connect, useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import { SignUpFunc } from "../redux/authreducer/action";
+import { toast } from 'react-toastify';
+import axios from "axios";
+export default function Signup() {
 
-export function Signup(props) {
     const [email, setEmail] = useState("")
-    let errorsObj = { firstname: '', lastname: '', email: '', password: '' };
-    const [errors, setErrors] = useState(errorsObj);
-    const [firstname, setFirstName] = useState("")
-    const [lastname, setLastName] = useState("")
+    const [firstName, setfirstName] = useState("")
+    const [lastName, setlastName] = useState("")
     const [password, setPassword] = useState("")
     const [showPassword, setShowPassword] = useState(false);
-    const dispatch = useDispatch()
-
-    function onSignUp(e) {
-        e.preventDefault();
-        let error = false;
-        const errorObj = { ...errorsObj };
-        if (email === '') {
-            errorObj.email = 'Email is Required';
-            error = true;
+    const [userObj, setUserObj] = useState([]);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const toast = useToast();
+    const { successCreate, createError } = useSelector((state) => {
+        return {
+          successCreate: state.AuthReducer.successCreate,
+          createError: state.AuthReducer.createError,
+        };
+      }, shallowEqual);
+    
+    
+      useEffect(() => {
+        if (successCreate) {
+          toast({
+            title: `Account Created Successfull`,
+            status: "success",
+            duration: 1500,
+            position: "top",
+            isClosable: true,
+          });
+          setTimeout(() => {
+            navigate("/login");
+          }, 2000);
         }
-
-        if (firstname === '') {
-            errorObj.firstname = 'FirstName is Required';
-            error = true;
+      }, [successCreate, toast, navigate]);
+    
+      useEffect(() => {
+        if (createError) {
+          toast({
+            title: `Something Went Wrong !!!`,
+            status: "error",
+            duration: 1500,
+            position: "top",
+            isClosable: true,
+          });
         }
-        if (lastname === '') {
-            errorObj.lastname = 'lastName is Required';
-            error = true;
+      }, [createError, toast]);
+    
+      function SignupRequest() {
+    
+        let checkAlready = false;
+    
+        userObj.length > 0 && userObj.forEach((el) => {
+          if(el.userEmail === email){
+            checkAlready = true;
+          }
+        })
+    
+        if(!checkAlready){
+          dispatch(
+            SignUpFunc({
+              userEmail: email,
+              password: password,
+              userfirstName: firstName,
+              userlastNAme: lastName,
+              
+            })
+            
+          )
+          setEmail("");
+          setPassword("");
+          setfirstName("");
+          setlastName("");
         }
-
-        if (password === '') {
-            errorObj.password = 'Password is Required';
-            error = true;
+        else{
+          toast({
+            title: `User already Signed up !!!`,
+            status: "error",
+            duration: 1500,
+            position: "top",
+            isClosable: true,
+          });
         }
-
-        setErrors(errorObj);
-
-        if (error) return;
-        dispatch(loadingToggleAction(true));
-
-        dispatch(signupAction(email, password, props.history));
-        console.log("hi")
-    }
+        
+      }
+    
+      useEffect(() => {
+        axios
+          .get("http://localhost:8080/registeredUser")
+          .then((response) => {
+            setUserObj(response.data);
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }, []);
 
     return (
 
@@ -82,18 +133,9 @@ export function Signup(props) {
                         to enjoy all of our cool features ✌️
                     </Text>
                 </Stack>
-                <div>
-                    {props.errorMessage && (
-                        <div className='bg-red-300 text-red-900 border border-red-900 p-1 my-2'>
-                            {props.errorMessage}
-                        </div>
-                    )}
-                    {props.successMessage && (
-                        <div className='bg-green-300 text-green-900 border border-green-900 p-1 my-2'>
-                            {props.successMessage}
-                        </div>
-                    )}
-                </div>
+
+
+
                 <Box
                     rounded={'lg'}
                     bg={useColorModeValue('white', 'gray.700')}
@@ -104,17 +146,14 @@ export function Signup(props) {
                             <Box>
                                 <FormControl id="firstName" isRequired>
                                     <FormLabel>First Name</FormLabel>
-                                    <Input type="text" value={firstname} onChange={(e) => setFirstName(e.target.value)} />
-                                    {/* {errors.firstname && <div><Alert status='error'>
-                                    <AlertIcon />
-                                    {errors.firstname}
-                                </Alert></div>} */}
+                                    <Input type="text" value={firstName} onChange={(e) => setfirstName(e.target.value)} />
+
                                 </FormControl>
                             </Box>
                             <Box>
                                 <FormControl id="lastName">
                                     <FormLabel>Last Name</FormLabel>
-                                    <Input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)} />
+                                    <Input type="text" value={lastName} onChange={(e) => setlastName(e.target.value)} />
                                 </FormControl>
                             </Box>
                         </HStack>
@@ -122,12 +161,6 @@ export function Signup(props) {
                             <FormLabel>Email address</FormLabel>
                             <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                            {errors.email && <div><Alert status='error'>
-                                <AlertIcon />
-                                {errors.email}
-                            </Alert> 
-
-                            </div>}
 
                         </FormControl>
 
@@ -135,7 +168,7 @@ export function Signup(props) {
                             <FormLabel>Password</FormLabel>
                             <InputGroup>
                                 <Input type={showPassword ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} />
-                               
+
                                 <InputRightElement h={'full'}>
                                     <Button
                                         variant={'ghost'}
@@ -149,7 +182,7 @@ export function Signup(props) {
                         </FormControl>
                         <Stack spacing={10} pt={2}>
                             <Button
-                                onClick={onSignUp}
+                                onClick={SignupRequest}
                                 loadingText="Submitting"
                                 size="lg"
                                 bg={'blue.400'}
@@ -172,11 +205,4 @@ export function Signup(props) {
     );
 }
 
-const mapStateToProps = (state) => {
-    return {
-        errorMessage: state.auth.errorMessage,
-        successMessage: state.auth.successMessage,
-        showLoading: state.auth.showLoading,
-    };
-};
-export default connect(mapStateToProps)(Signup);
+
