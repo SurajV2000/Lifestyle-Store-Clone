@@ -41,6 +41,8 @@ const Footer = () => {
                             justify={"center"}
                             gap={5}
                             marginTop={7}>
+
+                                
                             <Input bg={"white"} width="250px" />
                             <Button
                                 bg={"black"}
