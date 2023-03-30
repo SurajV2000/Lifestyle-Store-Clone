@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Grid, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Divider, Flex, Grid, Heading, Image, Progress, Text } from '@chakra-ui/react'
 import React from 'react'
 import HomeSlider from "../Components/Home/HomeSlider"
 
@@ -8,12 +8,18 @@ import TrendingSlider from '../Components/Home/TrendingSlider'
 import WomenSlider from '../Components/Home/WomenSlider'
 import UnMissSlider from '../Components/Home/UnMissSlider'
 import Footer from '../Components/Home/Footer'
+import Navbar from '../Components/Home/Navbar'
+import NavbarTop from '../Components/Home/NavbarTop'
 function HomePage() {
   return (
 
     <Box bgColor={"#fdfdfd"}>
+      <Box display={{ base: "none", sm: "none", md: "none", lg: "block" }}>
+        <NavbarTop />
+      </Box>
+      <Navbar />
       {/* Yellow Strip */}
-      <Box
+      {/* <Box
         height={10}
         backgroundColor="#f89f17"
         color={"white"}
@@ -22,22 +28,39 @@ function HomePage() {
         alignItems="center"
         justifyContent={"center"}>
         New arrivals in womenswear upto30% off ❤️
+      </Box> */}
+      <Box>
+      <Progress
+        colorScheme='pink'
+        hasStripe
+        height='42px'
+        value={100}
+        isAnimated />
+      <Text
+        color={"white"}
+        fontSize={{ base: "80%", sm: "100%", lg: "100%" }}
+        position="absolute"
+        top={{ base: "117px", sm: "115px", md: "142px", lg: "125px" }}
+        left={{ base: "5%", sm: "27%", md: "30%", lg: "40%" }} >
+        New arrivals in womenswear upto 30% off ❤️
+      </Text>
       </Box>
 
       <HomeSlider />
 
 
       <Box
-        width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }}
+        width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }}
         margin="auto"
         marginTop={{ base: "20px", sm: "30px", md: "30px", lg: "40px" }}>
         <Image
           width="100%"
+          borderRadius={"20px"} 
           src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip2-14Mar23.jpg" />
       </Box>
 
       {/* Our Benifits */}
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
 
         <Text
           width={{ base: "100px", sm: "150px", md: "150px", lg: "190px" }}
@@ -69,17 +92,18 @@ function HomePage() {
 
 
       <Box
-        width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }}
+        width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }}
         margin="auto"
         marginTop={{ base: "20px", sm: "30px", md: "30px", lg: "40px" }}>
         <Image
           width="100%"
+          borderRadius={"20px"} 
           src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip3-25Mar2023.jpg" />
       </Box>
 
       {/* unmissable offer */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
         <Text
           width={{ base: "135px", sm: "200px", md: "200px", lg: "270px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -95,7 +119,7 @@ function HomePage() {
 
       {/* womens store */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
         <Text
           width={{ base: "110px", sm: "170px", md: "170px", lg: "220px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -107,7 +131,7 @@ function HomePage() {
           borderBottomColor={"#f89f17"} >Women's Store</Text>
 
         <Box marginTop={{ base: 3, sm: 4, md: 6, lg: 7 }} >
-          <Image src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-PromoWidget24-Desk-Banner1-07Mar23.jpg" />
+          <Image   width="100%" borderRadius={"20px"}  src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-PromoWidget24-Desk-Banner1-07Mar23.jpg" />
         </Box>
         <WomenSlider />
 
@@ -116,7 +140,7 @@ function HomePage() {
 
       {/* Mens Wear */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
 
         <Text
           width={{ base: "100px", sm: "150px", md: "150px", lg: "190px" }}
@@ -129,7 +153,7 @@ function HomePage() {
           borderBottomColor={"#f89f17"} >Mens's Store</Text>
 
         <Box marginTop={{ base: 3, sm: 4, md: 6, lg: 7 }} >
-          <Image src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-UBERHP-GiftCard-13modblock-oneBythree-A-07Mar2023.jpg" />
+          <Image  borderRadius={"20px"}   width="100%"src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-UBERHP-GiftCard-13modblock-oneBythree-A-07Mar2023.jpg" />
         </Box>
 
         <MenSlider />
@@ -138,7 +162,7 @@ function HomePage() {
 
       {/* Kid's wear */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
         <Text
           width={{ base: "100px", sm: "150px", md: "150px", lg: "190px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -150,7 +174,7 @@ function HomePage() {
           borderBottomColor={"#f89f17"} >Kids Store</Text>
 
         <Box marginTop={{ base: 3, sm: 4, md: 6, lg: 7 }} >
-          <Image src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-Promowidget26-Desk-Banner1-08Mar23.jpg" />
+          <Image borderRadius={"20px"}   width="100%" src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-Promowidget26-Desk-Banner1-08Mar23.jpg" />
         </Box>
 
         <KidSlider />
@@ -160,7 +184,7 @@ function HomePage() {
 
       {/* Trending Add-ons */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
 
         <Text
           width={{ base: "135px", sm: "200px", md: "200px", lg: "270px" }}
@@ -173,7 +197,7 @@ function HomePage() {
           borderBottomColor={"#f89f17"} >Trending Add-Ons</Text>
 
         <Box marginTop={{ base: 3, sm: 4, md: 6, lg: 7 }} >
-          <Image src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-Promowidget23-Desk-Banner1-14Mar23.gif" />
+          <Image borderRadius={"20px"}    width="100%" src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHP-Promowidget23-Desk-Banner1-14Mar23.gif" />
         </Box>
 
         <TrendingSlider />
@@ -182,7 +206,7 @@ function HomePage() {
 
 
       {/* Seasons hot deals */}
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto"  >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto"  >
 
         <Text
           width={{ base: "170px", sm: "250px", md: "250px", lg: "330px" }}
@@ -222,7 +246,7 @@ function HomePage() {
 
       {/* Big brand discount */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto"  >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto"  >
         <Text
           width={{ base: "190px", sm: "280px", md: "280px", lg: "370px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -268,7 +292,7 @@ function HomePage() {
 
 
       {/* Welcome summer */}
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto"  >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto"  >
         <Text
           width={{ base: "140px", sm: "200px", md: "200px", lg: "270px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -306,7 +330,7 @@ function HomePage() {
 
       {/* Brands We Love */}
 
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" mb={"30px"} >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" mb={"30px"} >
         <Text
           width={{ base: "190px", sm: "280px", md: "280px", lg: "370px" }}
           fontSize={{ base: "100%", sm: "150%", md: "150%", lg: "200%" }}
@@ -348,7 +372,7 @@ function HomePage() {
       </Box>
 
       <Divider />
-      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }} margin="auto" >
+      <Box width={{ base: "90%", sm: "90%", md: "90%", lg: "85%" }} margin="auto" >
         <Footer />
       </Box>
     </Box>

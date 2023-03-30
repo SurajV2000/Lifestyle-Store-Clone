@@ -1,6 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
 import React, { Component } from "react";
-import  Slider  from "react-slick";
+import Slider from "react-slick";
 import sliderImage1 from "../../Asssets/SliderImage1.jpg"
 import sliderImage2 from "../../Asssets/SliderImage2.gif"
 import sliderImage3 from "../../Asssets/SliderImage3.jpg"
@@ -21,7 +21,7 @@ export default class HomeSlider extends Component {
       
     };
     return (
-      <Box  width={{base:"90%", sm:"90%",md:"90%",lg:"80%"}} margin="auto" marginTop={3}>
+      <Box  width={{base:"90%", sm:"90%",md:"90%",lg:"85%"}} margin="auto" marginTop={3}>
         <Slider {...settings} >
 
           <Box borderRadius={"8px"}>

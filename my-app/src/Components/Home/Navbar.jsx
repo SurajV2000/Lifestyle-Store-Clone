@@ -20,7 +20,7 @@ import { Link } from "react-router-dom"
 import HomeMenu from "./HomeMenu";
 import SearchBar from "./SearchBar";
 import SideBar from "./Sidebar";
-import NavbarTop from "./NavbarTop";
+// import NavbarTop from "./NavbarTop";
 
 const Navbar = () => {
     return (
@@ -33,9 +33,9 @@ const Navbar = () => {
             width="100%"
             boxShadow=" 0px 7px 7px -5px rgba(170, 159, 170, 0.2)">
 
-            <Box display={{ base: "none", sm: "none", md: "none", lg: "block" }}>
+            {/* <Box display={{ base: "none", sm: "none", md: "none", lg: "block" }}>
                 <NavbarTop />
-            </Box>
+            </Box> */}
 
             <Flex
                 height={{ base: "3.2rem", md: "4.94rem" }}
