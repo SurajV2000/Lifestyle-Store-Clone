@@ -1164,32 +1164,11 @@
       "password": "1234"
     },
     {
-      "firstName": "Shubhangi",
-      "lastName": "Saini",
-      "email": "eve.holt@reqres.in",
-      "password": "redhh",
+      "firstName": "vaibhav",
+      "lastNAme": "porwal",
+      "email": "vaibhav7895@gmail.com",
+      "password": "123456",
       "id": 2
-    },
-    {
-      "firstName": "a",
-      "lastName": "d",
-      "email": "shubh@gmail.com",
-      "password": "345",
-      "id": 3
-    },
-    {
-      "firstName": "Suhani",
-      "lastName": "Saini",
-      "email": "soni@gmail.com",
-      "password": "8888",
-      "id": 4
-    },
-    {
-      "userEmail": "komalporwal988@gmail.com",
-      "password": "4444444",
-      "userfirstName": "km",
-      "userlastNAme": "komal",
-      "id": 5
     }
   ]
 }
