@@ -21,7 +21,7 @@ export default class HomeSlider extends Component {
       
     };
     return (
-      <Box  width={{base:"90%", sm:"90%",md:"90%",lg:"80%"}} margin="auto" marginTop={3}>
+      <Box  width={{base:"90%", sm:"90%",md:"90%",lg:"85%"}} margin="auto" marginTop={3}>
         <Slider {...settings} >
 
           <Box borderRadius={"8px"}>

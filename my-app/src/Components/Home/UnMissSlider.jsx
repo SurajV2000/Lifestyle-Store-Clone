@@ -85,8 +85,8 @@ export default class UnMissSlider extends Component {
                 <Slider {...settings} >
 
                     {data.map((item, i) => {
-                        return <Box borderRadius={"8px"} key={i}>
-                            <Image borderRadius={"8px"} width={"93%"} margin="auto" src={item} />
+                        return <Box borderRadius={"20px"} key={i}>
+                            <Image borderRadius={"20px"}  width={"93%"} margin="auto" src={item} />
                         </Box>
                     })}
 
