@@ -1,6 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
 import React, { Component } from "react";
-import Slider from "react-slick";
+import  Slider  from "react-slick";
 import sliderImage1 from "../../Asssets/SliderImage1.jpg"
 import sliderImage2 from "../../Asssets/SliderImage2.gif"
 import sliderImage3 from "../../Asssets/SliderImage3.jpg"
