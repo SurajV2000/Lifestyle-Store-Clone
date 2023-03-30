@@ -6,7 +6,7 @@ import {reducer as MenReducer} from "./MenReducer/reducer"
 const rootReducer = combineReducers({
    MenReducer
   });
-import {AuthReducer} from "../redux/authReducer/reducer"
+// import {AuthReducer} from "../redux/authReducer/reducer"
 
 
 const middleware = applyMiddleware(thunk);
@@ -16,7 +16,7 @@ const composeEnhancers =
 
 const reducers = combineReducers({
     
-    auth: AuthReducer,
+    // auth: AuthReducer,
 });
   
   export const store = legacy_createStore(reducers,composeEnhancers(middleware));
