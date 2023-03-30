@@ -1,3 +1,8 @@
+import "./App.css";
+import { Men } from "./pages/Men";
+
+import Admin from "./pages/Admin";
+import Navbar from "./Components/Home/Navbar";
 
 import './App.css';
 // import { Men } from './pages/Men';
@@ -19,6 +24,9 @@ import Login from './pages/Login';
 function App() {
   return (
     <div className="App">
+      < Navbar/>
+      <Men />
+
       <SignUp/>
       {/* <Login/> */}
       {/* <Admin/> */}
