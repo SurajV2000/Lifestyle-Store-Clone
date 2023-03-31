@@ -10,11 +10,14 @@ import './App.css';
 
 
 
+
 import { Cart } from './pages/Cart';
-// import {Checkout} from './pages/Checkout'
+import Checkout from "./pages/Checkout"
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+import MainRoutes from "./Components/MainRoutes";
+import Payment from "./pages/Payment";
 
 
 
@@ -23,6 +26,7 @@ import Login from './pages/Login';
 function App() {
   return (
     <div className="App">
+
       {/* < Navbar/>
       <Men /> */}
 
@@ -34,7 +38,22 @@ function App() {
       
       {/* <Admin/>
       <Cart/> */}
+
+     
+      {/* <MainRoutes/> */}
+
+      {/* <Men /> */}
+
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+     
+  
+    
+    
+      {/* <Admin/> */}
+      {/* <Cart/> */}
       {/* <Checkout/> */}
+      <Payment/>
       
 
     </div>

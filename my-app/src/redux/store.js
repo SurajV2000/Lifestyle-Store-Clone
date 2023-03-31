@@ -6,6 +6,8 @@ import {reducer as MenReducer} from "./MenReducer/reducer"
 
 
 import {reducer as AuthReducer} from "./authreducer/reducer"
+
+import {reducer as AuthReducer} from "../redux/authReducer/reducer"
 const rootReducer = combineReducers({
    MenReducer,
    AuthReducer
@@ -19,9 +21,9 @@ const rootReducer = combineReducers({
 
 
 
-const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const composeEnhancers =
+//     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
   
-  export const store = legacy_createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
+  // export const store = legacy_createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
