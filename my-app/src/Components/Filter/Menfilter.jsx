@@ -11,7 +11,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
-const Menfilter = () => {
+const Menfilter = ({ type }) => {
   const getCurrentPage = (page) => {
     page = Number(page);
 
@@ -25,6 +25,12 @@ const Menfilter = () => {
   const initialCategory = searchParams.getAll("category");
   const [category, setCategory] = useState(initialCategory || []);
   const [page, setPage] = useState(getCurrentPage(searchParams.get("page")));
+  const intialOrder = searchParams.get("order");
+  const [order, setOrder] = useState(intialOrder || "");
+
+  const handleSort = (e) => {
+    setOrder(e.target.value);
+  };
 
   const handleChange = (e) => {
     let newCategory = [...category];
@@ -44,8 +50,10 @@ const Menfilter = () => {
       page,
       category,
     };
+    console.log(type);
+    order && (params.order = order);
     setSearchParams(params);
-  }, [category, page]);
+  }, [category, page, order]);
 
   return (
     <Flex
@@ -66,7 +74,7 @@ const Menfilter = () => {
       backgroundColor="	#F0F0F0"
       justifyContent={"center"}
     >
-      <div>
+      <div onChange={handleSort}>
         <Popover
           trigger={"hover"}
           closeOnBlur={false}
@@ -77,7 +85,7 @@ const Menfilter = () => {
             <>
               <PopoverTrigger>
                 <Button
-                  fontSize={{ base: "15px", sm: "20px", md: "25px" }}
+                  fontSize={{ base: "15px", sm: "20px", md: "20px" }}
                   style={{ backgroundColor: "white" }}
                 >
                   Filter By Price
@@ -96,7 +104,9 @@ const Menfilter = () => {
                     <input
                       style={{ marginRight: "10px" }}
                       value={"asc"}
-                      type="checkbox"
+                      type="radio"
+                      name="order"
+                      defaultChecked={order === "asc"}
                     />
                     <label>Low To High</label>
                     <br />
@@ -104,7 +114,9 @@ const Menfilter = () => {
                     <input
                       style={{ marginRight: "10px" }}
                       value={"desc"}
-                      type="checkbox"
+                      name="order"
+                      type="radio"
+                      defaultChecked={order === "desc"}
                     />
                     <label>High To Low</label>
                   </PopoverBody>
@@ -126,7 +138,7 @@ const Menfilter = () => {
             <>
               <PopoverTrigger>
                 <Button
-                  fontSize={{ base: "15px", sm: "20px", md: "25px" }}
+                  fontSize={{ base: "15px", sm: "20px", md: "20px" }}
                   style={{ backgroundColor: "white" }}
                 >
                   Filter By Category{" "}
@@ -144,22 +156,38 @@ const Menfilter = () => {
                   <PopoverBody>
                     <input
                       onChange={handleChange}
-                      checked={category.includes("Casual Shirts")}
+                      checked={category.includes(
+                        type === "men"
+                          ? "Casual Shirts"
+                          : "Dresses and Jumpsuits"
+                      )}
                       style={{ marginRight: "10px" }}
-                      value={"Casual Shirts"}
+                      value={
+                        type === "men"
+                          ? "Casual Shirts"
+                          : "Dresses and Jumpsuits"
+                      }
                       type="checkbox"
                     />
-                    <label>Casual Shirts</label>
+                    <label>
+                      {type === "men"
+                        ? "Casual Shirts"
+                        : "Dresses and Jumpsuits"}
+                    </label>
                     <br />
                     <br />
                     <input
                       onChange={handleChange}
-                      checked={category.includes("Jeans")}
+                      checked={category.includes(
+                        type === "men" ? "Jeans" : "Kurtas and Kurtis"
+                      )}
                       style={{ marginRight: "10px" }}
-                      value={"Jeans"}
+                      value={type === "men" ? "Jeans" : "Kurtas and Kurtis"}
                       type="checkbox"
                     />
-                    <label>Jeans</label>
+                    <label>
+                      {type === "men" ? "Jeans" : "Kurtas and Kurtis"}
+                    </label>
                   </PopoverBody>
                 </PopoverContent>
               </Portal>
