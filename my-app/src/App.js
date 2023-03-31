@@ -1,7 +1,7 @@
 import "./App.css";
 import { Men } from "./pages/Men";
 
-import Admin from "./pages/Admin";
+
 import Navbar from "./Components/Home/Navbar";
 
 import './App.css';
@@ -9,15 +9,16 @@ import './App.css';
 
 
 
-
 import { Cart } from './pages/Cart';
-// import {Checkout} from './pages/Checkout'
+import Checkout from "./pages/Checkout"
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
 import { Women } from "./pages/Women";
 import MainRoutes from "./Components/MainRoutes";
 import Footer from "./Components/Home/Footer";
+import MainRoutes from "./Components/MainRoutes";
+import Payment from "./pages/Payment";
 
 
 
@@ -37,7 +38,34 @@ function App() {
 {/*       
       <Admin/>
       <Cart/> */}
+
+      {/* < Navbar/>
+      <Men /> */}
+
+      {/* <SignUp/> */}
+      <Login/>
+      {/* <Admin/> */}
+      {/* <Cart/> */}
+    
+      
+      {/* <Admin/>
+      <Cart/> */}
+
+     
+      {/* <MainRoutes/> */}
+
+      {/* <Men /> */}
+
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+     
+  
+    
+    
+      {/* <Admin/> */}
+      {/* <Cart/> */}
       {/* <Checkout/> */}
+      <Payment/>
       
 
     </div>
