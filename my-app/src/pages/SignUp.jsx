@@ -20,9 +20,13 @@ import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { useNavigate } from "react-router-dom";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 
+// import { SignUpFunc } from "../redux/authreducer/action";
+
+
 import { SignUpFunc } from "../redux/authReducer/action";
 
 import {SignUpFunc} from "../redux/authReducer/action"
+
 
 import { toast } from 'react-toastify';
 import axios from "axios";
@@ -84,6 +88,16 @@ export default function Signup() {
     
         if(!checkAlready){
           dispatch(
+
+            // SignUpFunc({
+            //   userEmail: email,
+            //   password: password,
+            //   userfirstName: firstName,
+            //   userlastNAme: lastName,
+              
+            // })
+          )
+
             SignUpFunc({
               firstName: firstName,
               lastName: lastName,
@@ -92,6 +106,7 @@ export default function Signup() {
               
             })
           );
+
           setEmail("");
           setPassword("");
           setfirstName("");

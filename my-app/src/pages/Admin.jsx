@@ -5,7 +5,7 @@ import AdminSidebar from '../Components/Admin/AdminSidebar'
 
 
 
-function Admin() {
+function Admin(){
   return (
     <div>
       <AdminNavbar/>

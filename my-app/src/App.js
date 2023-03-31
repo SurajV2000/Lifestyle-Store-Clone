@@ -9,7 +9,6 @@ import './App.css';
 
 
 
-
 import { Cart } from './pages/Cart';
 import Checkout from "./pages/Checkout"
 import SignUp from './pages/SignUp';
