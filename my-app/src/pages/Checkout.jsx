@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { Box, Button, Divider, Flex, FormControl, FormLabel, Image, Input,Text, useToast } from "@chakra-ui/react"
 import Navbar from '../Components/Home/Navbar'
@@ -448,4 +449,4 @@ function Checkout() {
     )
 }
 
-export default Checkout
+export defaul
