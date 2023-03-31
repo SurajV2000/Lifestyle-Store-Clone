@@ -73,7 +73,7 @@ export default function Signup() {
         let checkAlready = false;
     
         userObj.length > 0 && userObj.forEach((el) => {
-          if(el.userEmail === email){
+          if(el.email === email){
             checkAlready = true;
           }
         })
@@ -81,13 +81,13 @@ export default function Signup() {
         if(!checkAlready){
           dispatch(
             SignUpFunc({
-              userEmail: email,
+              firstName: firstName,
+              lastName: lastName,
+              email: email,
               password: password,
-              userfirstName: firstName,
-              userlastNAme: lastName,
               
             })
-          )
+          );
           setEmail("");
           setPassword("");
           setfirstName("");

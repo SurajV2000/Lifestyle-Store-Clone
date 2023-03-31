@@ -1,14 +1,13 @@
 import "./App.css";
 import { Men } from "./pages/Men";
 
-import Admin from "./pages/Admin";
+
 import Navbar from "./Components/Home/Navbar";
 
 import './App.css';
 // import { Men } from './pages/Men';
 
 
-import Admin from './pages/Admin';
 
 
 import { Cart } from './pages/Cart';
@@ -24,17 +23,17 @@ import Login from './pages/Login';
 function App() {
   return (
     <div className="App">
-      < Navbar/>
-      <Men />
+      {/* < Navbar/>
+      <Men /> */}
 
-      <SignUp/>
-      {/* <Login/> */}
+      {/* <SignUp/> */}
+      <Login/>
       {/* <Admin/> */}
       {/* <Cart/> */}
     
       
-      <Admin/>
-      <Cart/>
+      {/* <Admin/>
+      <Cart/> */}
       {/* <Checkout/> */}
       
 
