@@ -1165,10 +1165,17 @@
     },
     {
       "firstName": "vaibhav",
-      "lastNAme": "porwal",
+      "lastName": "porwal",
       "email": "vaibhav7895@gmail.com",
-      "password": "123456",
+      "password": "12345",
       "id": 2
+    },
+    {
+      "firstName": "vaibhav",
+      "lastName": "porwal",
+      "email": "vaibhav7895@gmail.com",
+      "password": "12345",
+      "id": 3
     }
   ]
 }
