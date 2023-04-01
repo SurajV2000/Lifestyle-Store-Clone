@@ -10,9 +10,7 @@ import {MdOutlineAddCircleOutline } from "react-icons/md";
 const sidebarData=[
 {title:"Products",icon:<MdOutlineProductionQuantityLimits/>,link:"/products"},
 {title:"Add Product",icon:<MdOutlineAddCircleOutline/>,link:"/manageProduct"},
-{title:"Manage Product",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
-{title:"Manage Product",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
-
+{title:"Manage Users",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
 ]
 
 function AdminSidebar() {
@@ -34,8 +32,6 @@ function AdminSidebar() {
         })}
       </ul>
     </div>
-    
   )
 }
-
 export default AdminSidebar;

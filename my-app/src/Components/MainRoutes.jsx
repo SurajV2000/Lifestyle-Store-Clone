@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
@@ -12,10 +13,12 @@ import Login from "../pages/Login";
 
 function MainRoutes() {
 
-
-
   return (
     <Routes>
+
+        <Route path="/" element={<HomePage/>}/>
+   <Route path="/men" element={<Men/>}/>
+
       <Route path="/" element={<HomePage />} />
       <Route path="/men" element={<Men />} />
       <Route path="/women" element={<Women />} />
@@ -25,6 +28,7 @@ function MainRoutes() {
       <Route path="/payment" element={<Payment/>}/>
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/login" element={<Login/>}/>
+
 
     </Routes>
   );
