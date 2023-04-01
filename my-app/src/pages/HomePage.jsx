@@ -13,7 +13,8 @@ import NavbarTop from '../Components/Home/NavbarTop'
 function HomePage() {
   return (
 
-    <Box bgColor={"#fdfdfd"}>
+    <Box bgColor={"#fdfdfd"} >
+    {/* <Box bgColor={"black"}>  */}
       <Box display={{ base: "none", sm: "none", md: "none", lg: "block" }}>
         <NavbarTop />
       </Box>

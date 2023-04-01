@@ -1,20 +1,24 @@
 import "./App.css";
 import { Men } from "./pages/Men";
 
-import Admin from "./pages/Admin";
+
 import Navbar from "./Components/Home/Navbar";
 
 import './App.css';
 // import { Men } from './pages/Men';
 
 
+
 import { Cart } from './pages/Cart';
-// import {Checkout} from './pages/Checkout'
+import Checkout from "./pages/Checkout"
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+
+import { Women } from "./pages/Women";
 import MainRoutes from "./Components/MainRoutes";
-import AdminRouter from "./Components/Admin/AdminRouter";
+import Footer from "./Components/Home/Footer";
+import Payment from "./pages/Payment";
 
 
 
@@ -27,8 +31,25 @@ function App() {
       <Men />
 
       <SignUp/> */}
+
+      {/* < Navbar/> */}
+    {/* <Women/> */}
+      {/* <SignUp/> */}
       {/* <Login/> */}
       <Admin/>
+      {/* <Cart/> */}
+      {/* <Footer/> */}
+    {/* <MainRoutes/> */}
+{/*       
+      <Admin/>
+      <Cart/> */}
+
+      {/* < Navbar/>
+      <Men /> */}
+
+      {/* <SignUp/> */}
+    
+      {/* <Admin/> */}
       {/* <Cart/> */}
     
       
@@ -36,7 +57,26 @@ function App() {
       {/* <Cart/> */}
       {/* <Checkout/> */}
      
-      {/* <MainRoutes/> */}
+      {/* <MaiRoutes/> */}
+      {/* <Admin/>
+      <Cart/> */}
+
+     
+      <MainRoutes/>
+
+      {/* <Men /> */}
+
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+     
+  
+    
+    
+      {/* <Admin/> */}
+      {/* <Cart/> */}
+      {/* <Checkout/> */}
+      {/* <Payment/> */}
+      
 
     </div>
   );

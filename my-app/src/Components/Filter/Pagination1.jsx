@@ -4,6 +4,9 @@ import { useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 
 const Pagination1 = () => {
+  const { total } = useSelector((store) => {
+    return store.MenReducer;
+  });
   const getCurrentPage = (page) => {
     page = Number(page);
 
@@ -38,7 +41,12 @@ const Pagination1 = () => {
           </Button>{" "}
           <span />
           <Button>{page}</Button> <span />
-          <Button onClick={() => handlePage(+1)}>Next</Button>
+          <Button
+            isDisabled={page === Math.ceil(total / 12)}
+            onClick={() => handlePage(+1)}
+          >
+            Next
+          </Button>
         </Box>
       </Center>
     </Box>
