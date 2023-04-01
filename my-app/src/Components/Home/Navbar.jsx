@@ -16,13 +16,20 @@ import React, { useEffect } from "react";
 import { BsBag, BsMenuButton, BsPerson } from "react-icons/bs"
 import { AiOutlineHeart } from "react-icons/ai";
 import Logo from "../../Asssets/logo2.png"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import HomeMenu from "./HomeMenu";
 import SearchBar from "./SearchBar";
 import SideBar from "./Sidebar";
+import { useSelector } from "react-redux";
 // import NavbarTop from "./NavbarTop";
 
 const Navbar = () => {
+     const navigate = useNavigate()
+    const { isAuth,userData} = useSelector((store) => {
+        return store.AuthReducer;
+    })
+    console.log(userData)
+
     return (
 
         <Box
@@ -102,7 +109,16 @@ const Navbar = () => {
                                     <MenuItem>Reviews</MenuItem>
                                 </MenuGroup>
 
-                                <MenuItem _hover={{ backgroundColor: "pink" }} backgroundColor="#fdb852" >Sign Out</MenuItem>
+                                {isAuth === true ?(
+                                    <MenuItem _hover={{ backgroundColor: "pink" }} backgroundColor="#fdb852" >Sign Out</MenuItem>)
+                                    :
+
+                                    (<MenuItem _hover={{ backgroundColor: "pink" }} backgroundColor="#fdb852"
+                                    onClick={()=>{
+                                        navigate('/login')
+                                    }} >Sign In</MenuItem>)}
+
+
 
                             </MenuList>
 
@@ -117,11 +133,27 @@ const Navbar = () => {
                         </Flex>
                     </Link>
 
-                    <Link to="#">
+                    <Link to="/cart">
                         <Flex flexDir={"column"} align={"center"} pos="relative">
                             <Text>
                                 <BsBag fontSize={"1.3rem"} />
+
                             </Text>
+                            <Box
+                                justify={"center"}
+                                align="center"
+                                pos={"absolute"}
+                                top="-5px"
+                                right="-12px"
+                                width="20px"
+                                height="20px"
+                                color="white"
+                                borderRadius={"50%"}
+                                bg="#d53f8c"
+                            >
+                                <Text > {0}</Text>
+
+                            </Box>
                         </Flex>
                     </Link>
 

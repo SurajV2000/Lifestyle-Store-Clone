@@ -20,19 +20,39 @@ import {
   List,
   ListItem,
   Grid,
+  useToast
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
+import axios from "axios";
 
 const Singlecardwomen = () => {
   const { id } = useParams();
   console.log(+id - 1);
-
+  const toast=useToast();
   const { women, isLoading, isError, total } = useSelector((store) => {
     return store.MenReducer;
   });
+  
+  const [el] = women.filter((el)=>{
+    return el.id===id
 
-  const el = women[+id - 1];
+  })
+  console.log(el)
+  const handleAdd=()=>{
+    axios.post(`http://localhost:8080/cart`,el).then((res)=>{
+     toast({
+       title: 'Added to cart',
+       description: "You can checkout from Cart",
+       status: 'success',
+       duration: 1000,
+       isClosable: true,
+       position:"top",
+     })
+    }).catch((err)=>{
+     console.log(err)
+    })
+}
   console.log(el);
   return (
     <Container maxW={"90%"}>
@@ -247,6 +267,7 @@ const Singlecardwomen = () => {
               transform: "translateY(2px)",
               boxShadow: "lg",
             }}
+            onClick={handleAdd}
           >
             Add to cart
           </Button>
