@@ -13,6 +13,8 @@ import { Cart } from './pages/Cart';
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+import MainRoutes from "./Components/MainRoutes";
+import AdminRouter from "./Components/Admin/AdminRouter";
 
 
 
@@ -21,19 +23,20 @@ import Login from './pages/Login';
 function App() {
   return (
     <div className="App">
-      < Navbar/>
+      {/* < Navbar/>
       <Men />
 
-      <SignUp/>
+      <SignUp/> */}
       {/* <Login/> */}
-      {/* <Admin/> */}
+      <Admin/>
       {/* <Cart/> */}
     
       
-      <Admin/>
-      <Cart/>
+      {/* <AdminRouter/> */}
+      {/* <Cart/> */}
       {/* <Checkout/> */}
-      
+     
+      {/* <MainRoutes/> */}
 
     </div>
   );
