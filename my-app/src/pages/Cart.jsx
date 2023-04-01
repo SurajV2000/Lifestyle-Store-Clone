@@ -17,11 +17,22 @@ import {
     Image,
   } from "@chakra-ui/react";
   import { CloseIcon } from "@chakra-ui/icons";
+
+  import { Navigate, useNavigate } from "react-router";
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart } from '../redux/cartReducer/action';
+import axios from "axios"
+
   import {useNavigate } from "react-router";
 
 
 
+
  export const Cart = () => {
+
+
+    const [cartItem, setCartItems] = useState([]);
+
    const navigate = useNavigate()
     const [cartItems, setCartItems] = useState([
       {  
@@ -57,16 +68,34 @@ import {
          quantity: 2,
       }
     ]);
+
     const [count, setCount] = useState(1);
-
-    // let Total = 0;
-    let saved = 0;
-
     
+    const dispatch=useDispatch();
+    const {cartItems}=useSelector((store)=>store.cartReducer)
+    console.log(cartItems)
+    
+    let saved = 0;
+    const getData=()=>{
+      axios.get(`http://localhost:8080/cart`).then((res)=>{
+        dispatch(addToCart(res.data))
+        setCartItems(cartItems)
+      }).catch((err)=>{
+        console.log(err);
+      })
+    }
+
 
     const handleDelete=(id)=>{
       setCartItems(cartItems.filter((e) => e.id !== id));
+    
+      // axios.delete(`http://localhost:8080/cart/${id}`).then((res)=>{
+      //   dispatch(removeFromCart(id))
+      // }).catch((err)=>{
+      //   console.log(err)
+      // })
     }
+
    
 
     const handleQuantityChange = (id, quantity) => {
@@ -83,6 +112,11 @@ import {
         0
       );
     };
+    useEffect(() => {
+      getData()
+     
+    },[]);
+
  
   return (
    

@@ -18,6 +18,10 @@ import Login from './pages/Login';
 import { Women } from "./pages/Women";
 import MainRoutes from "./Components/MainRoutes";
 import Footer from "./Components/Home/Footer";
+
+// import MainRoutes from "./Components/MainRoutes";
+
+
 import Payment from "./pages/Payment";
 
 
@@ -27,11 +31,6 @@ import Payment from "./pages/Payment";
 function App() {
   return (
     <div className="App">
-      {/* < Navbar/>
-      <Men />
-
-      <SignUp/> */}
-
       {/* < Navbar/> */}
     {/* <Women/> */}
       {/* <SignUp/> */}
@@ -39,7 +38,10 @@ function App() {
       <Admin/>
       {/* <Cart/> */}
       {/* <Footer/> */}
+
+
     {/* <MainRoutes/> */}
+
 {/*       
       <Admin/>
       <Cart/> */}
@@ -48,9 +50,12 @@ function App() {
       <Men /> */}
 
       {/* <SignUp/> */}
-    
+
+      {/* <Login/> */}
+
+
       {/* <Admin/> */}
-      {/* <Cart/> */}
+      <Cart/>
     
       
       {/* <AdminRouter/> */}
