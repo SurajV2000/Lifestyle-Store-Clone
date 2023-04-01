@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Admin.css"
 
 import {
@@ -9,10 +9,11 @@ import {
   Button,
   RadioGroup,
   Stack,
-  Radio
+  Radio,
+  useToast
 } from '@chakra-ui/react'
 import axios from 'axios'
-
+import { useParams } from 'react-router-dom'
 
 const initailState={
   image:"",
@@ -27,12 +28,13 @@ const initailState={
   category:"",
 }
 
-const AdminManageProduct=()=>{
+const AdminEdit=()=>{
   const [product,setProduct]=useState(initailState);
+  const {id}=useParams();
+  const toast=useToast();
 
   const handleChange=(e)=>{
       let {name,value}=e.target;
-     
       setProduct((prev)=>{
         return {...prev,[e.target.name]:value}
       })
@@ -40,19 +42,34 @@ const AdminManageProduct=()=>{
 
   const handleSubmit=(e)=>{
     e.preventDefault();
-
-
-     axios.post(`http://localhost:8080/${product.gender}`,product)
+     axios.patch(`http://localhost:8080/men/${id}`,product)
      .then((res)=>{
-      alert("Added Product")
+        toast({
+            title: 'Product Edited Success',
+            description: "We have edited our Product",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+            position:"top",
+          })
      })
      .catch((error)=>{
        console.log(error)
      })
-     
-
      setProduct(initailState)
   }
+
+  useEffect(()=>{
+    axios.get(`http://localhost:8080/men/${id}`)
+    .then((res)=>{
+        setProduct(res.data)
+        console.log(res.data)
+    })
+    .catch((error)=>{
+        console.log(error)
+    })
+  },[])
+
 
   return (
   <FormControl onSubmit={handleSubmit} width="30%" h={"auto"} m="auto" border={"1px solid gainsboro"} mt={"20px"} mb={"20px"}  gap={"20px"} bg={"#f7f8f7"}>
@@ -80,12 +97,12 @@ const AdminManageProduct=()=>{
      <FormLabel mt={"12px"}>Title</FormLabel>
      <Input type='text' value={product.title} name="title"  onChange={(e)=>handleChange(e)} />
 
+
 <FormLabel mt={"12px"}>Gender</FormLabel>
      <Select name="gender" placeholder='Select Gender' onChange={(e)=>handleChange(e)}>
         <option value={"men"}>Men</option>
         <option value={"women"}>Women</option>
      </Select>
-
 
      <FormLabel mt={"12px"} mb={"10px"}>Category</FormLabel>
      <Select name='category' placeholder='Select Catergory' onChange={(e)=>handleChange(e)}>
@@ -93,18 +110,10 @@ const AdminManageProduct=()=>{
         <option value={product.gender=="women" ?"Dresses and Jumpsuits":"Jeans"}>{product.gender=="women" ?"Dresses and Jumpsuits":"Jeans"}</option>
      </Select>
 
-
-
-     
-      
-
       {/* <Input type="submit"/> */}
-      <Button ml={"155px"} mt={"20px"} bg={"skyblue"} onClick={handleSubmit} >Add Product</Button>
-
+      <Button ml={"155px"} mt={"20px"} bg={"skyblue"} onClick={handleSubmit} >Edit Product</Button>
+      
   </FormControl>
-
-  
   )
 }
-
-export default AdminManageProduct
+export default AdminEdit

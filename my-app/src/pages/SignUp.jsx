@@ -24,11 +24,6 @@ import { SignUpFunc } from "../redux/authReducer/action";
 // import { SignUpFunc } from "../redux/authreducer/action";
 
 
-// import { SignUpFunc } from "../redux/authReducer/action";
-
-// import {SignUpFunc} from "../redux/authReducer/action"
-
-
 import { toast } from 'react-toastify';
 import axios from "axios";
 export default function Signup() {

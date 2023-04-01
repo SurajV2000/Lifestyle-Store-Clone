@@ -14,10 +14,14 @@ import Checkout from "./pages/Checkout"
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+
 import { Women } from "./pages/Women";
 import MainRoutes from "./Components/MainRoutes";
 import Footer from "./Components/Home/Footer";
+
 // import MainRoutes from "./Components/MainRoutes";
+
+
 import Payment from "./pages/Payment";
 
 
@@ -31,10 +35,13 @@ function App() {
     {/* <Women/> */}
       {/* <SignUp/> */}
       {/* <Login/> */}
-      {/* <Admin/> */}
+      <Admin/>
       {/* <Cart/> */}
       {/* <Footer/> */}
-    <MainRoutes/>
+
+
+    {/* <MainRoutes/> */}
+
 {/*       
       <Admin/>
       <Cart/> */}
@@ -43,16 +50,24 @@ function App() {
       <Men /> */}
 
       {/* <SignUp/> */}
+
       {/* <Login/> */}
+
+
       {/* <Admin/> */}
       <Cart/>
     
       
+      {/* <AdminRouter/> */}
+      {/* <Cart/> */}
+      {/* <Checkout/> */}
+     
+      {/* <MaiRoutes/> */}
       {/* <Admin/>
       <Cart/> */}
 
      
-      {/* <MainRoutes/> */}
+      <MainRoutes/>
 
       {/* <Men /> */}
 
