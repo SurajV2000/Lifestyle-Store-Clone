@@ -17,12 +17,12 @@ import {
     Image,
   } from "@chakra-ui/react";
   import { CloseIcon } from "@chakra-ui/icons";
-  import { Navigate, useNavigate } from "react-router";
+  import {useNavigate } from "react-router";
 
 
 
  export const Cart = () => {
-
+   const navigate = useNavigate()
     const [cartItems, setCartItems] = useState([
       {  
         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
@@ -226,12 +226,12 @@ import {
                   variant={"outline"}
                   onClick={() => {
                     if (cartItems.length !== 0) {
-                      Navigate("/checkout");
+                      navigate("/checkout");
                     } else {
                       alert(
                         "Your Cart is Empty, Please Add items into cart and after check it out"
                       );
-                      Navigate("/product");
+                      navigate("/product");
                     }
                   }}
                 >
