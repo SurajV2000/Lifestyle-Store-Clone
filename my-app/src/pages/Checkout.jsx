@@ -1,25 +1,26 @@
 
 import React, { useState } from 'react'
-import { Box, Button, Divider, Flex, FormControl, FormLabel, Image, Input,Text, useToast } from "@chakra-ui/react"
+import { Box, Button, Divider, Flex, FormControl, FormLabel, Image, Input, Text, useToast } from "@chakra-ui/react"
 import Navbar from '../Components/Home/Navbar'
 // import { Link } from 'react-router-dom'
 import Footer from '../Components/Home/Footer'
+import { useNavigate } from 'react-router-dom'
 
 const order = [
     {
 
-    "title": "W Women Printed Three-quarter Sleeves A-line Kurta",
-    "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011695801-Blue-Blue-1000011695801_01-2100.jpg",
-    "price": 2599,
-    "id": "1"
-},
-{
-    "title": "INDYA Embellished Straight Kurta",
-    "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008835887-Yellow-YELLOW-1000008835887_01-2100.jpg",
-    "price": 1300,
-    "category": "Kurtas and Kurtis",
-    "id": "3"
-}
+        "title": "W Women Printed Three-quarter Sleeves A-line Kurta",
+        "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011695801-Blue-Blue-1000011695801_01-2100.jpg",
+        "price": 2599,
+        "id": "1"
+    },
+    {
+        "title": "INDYA Embellished Straight Kurta",
+        "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008835887-Yellow-YELLOW-1000008835887_01-2100.jpg",
+        "price": 1300,
+        "category": "Kurtas and Kurtis",
+        "id": "3"
+    }
 ]
 const initialState = {
     name: "",
@@ -31,11 +32,12 @@ const initialState = {
 }
 function Checkout() {
     const toast = useToast()
+    const navigate = useNavigate()
 
     const [address, setAddress] = useState(initialState)
 
     const [storeADD, setStoreADD] = useState("")
-    
+
     //   console.log(address)
     const handleChange = (e) => {
         const name = e.target.name
@@ -72,7 +74,7 @@ function Checkout() {
             <Box>
                 <Navbar />
             </Box>
-        
+
             <Box
                 width={{ base: "90%", sm: "90%", md: "90%", lg: "80%" }}
                 margin="auto" >
@@ -254,7 +256,7 @@ function Checkout() {
                                                 marginTop="20px"
                                                 marginBottom={"5px"}
                                                 fontWeight="bold">
-                                                Your Address
+                                                Your Shipping Address
                                             </Text>
                                             <Text
                                                 color={"black"}
@@ -288,7 +290,10 @@ function Checkout() {
                                             _hover={{ bgColor: "#f89f17" }}
                                             color="white"
                                             fontSize={{ base: "13px", sm: "20px", md: "18px", lg: "20px" }}
-                                            marginTop="20px" >
+                                            marginTop="20px"
+                                            onClick={()=>{
+                                                navigate("/payment")
+                                            }} >
                                             Proceed to Payment
                                         </Button>
                                     </Flex>
@@ -380,7 +385,7 @@ function Checkout() {
                                 {
                                     order.map((item) => {
                                         return (
-                                            <Flex flexDir={{base:"column",sm:"row",md:"column",lg:"row"}}
+                                            <Flex flexDir={{ base: "column", sm: "row", md: "column", lg: "row" }}
                                                 gap={3}
                                                 border="1px solid #bab8b4"
                                                 padding={"5px"}
@@ -400,7 +405,7 @@ function Checkout() {
                                                     <Text
                                                         fontWeight={"bold"}
                                                         fontSize={{ base: "12px", sm: "14px", md: "16px", lg: "16px" }} >
-                                                        {item.price}
+                                                        ₹{item.price}/-
                                                     </Text>
                                                     <Text
                                                         fontSize={{ base: "12px", sm: "14px", md: "16px", lg: "16px" }} >
@@ -419,22 +424,22 @@ function Checkout() {
 
                             </Box>
                             <Box fontSize={"12px"} color="#939290">
-                    <Box mb="10px">
-                        <Image src="https://i1.lmsin.net/website_images/in/checkout/comodo-secure-icon.svg"/>
-                    </Box>
-                    <Text  mb="10px">
-                    Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.
-                    </Text>
-                    <Text mb="10px">© 2021 RNA Intellectual Property Limited.</Text>
-                    <Text mb="10px">Privacy Policy-Terms of Use- Terms & Condition </Text>
-                </Box>
+                                <Box mb="10px">
+                                    <Image src="https://i1.lmsin.net/website_images/in/checkout/comodo-secure-icon.svg" />
+                                </Box>
+                                <Text mb="10px">
+                                    Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.
+                                </Text>
+                                <Text mb="10px">© 2021 RNA Intellectual Property Limited.</Text>
+                                <Text mb="10px">Privacy Policy-Terms of Use- Terms & Condition </Text>
+                            </Box>
 
                         </Box>
 
                     </Flex>
 
                 </Box>
-                
+
 
 
 
@@ -449,4 +454,7 @@ function Checkout() {
     )
 }
 
-export defaul
+
+export default Checkout
+
+
