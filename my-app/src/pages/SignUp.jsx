@@ -24,9 +24,9 @@ import { SignUpFunc } from "../redux/authReducer/action";
 // import { SignUpFunc } from "../redux/authreducer/action";
 
 
-import { SignUpFunc } from "../redux/authReducer/action";
+// import { SignUpFunc } from "../redux/authReducer/action";
 
-import {SignUpFunc} from "../redux/authReducer/action"
+// import {SignUpFunc} from "../redux/authReducer/action"
 
 
 import { toast } from 'react-toastify';
@@ -106,7 +106,7 @@ export default function Signup() {
               password: password,
               
             })
-          );
+          
 
           setEmail("");
           setPassword("");

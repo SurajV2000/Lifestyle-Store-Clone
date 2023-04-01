@@ -1177,5 +1177,47 @@
       "password": "12345",
       "id": 3
     }
+  ],
+  "cart": [
+    {
+      "title": "BOSSINI Men Striped Casual Shirt",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_06-2100.jpg",
+      "actualPrice": 3000,
+      "category": "Casual Shirts",
+      "price": 899,
+      "id": "24"
+    },
+    {
+      "title": "MELANGE Women Printed Three-Quarter Sleeves Straight Kurta",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_06-2100.jpg",
+      "price": 909,
+      "actualPrice": 3000,
+      "category": "Kurtas and Kurtis",
+      "id": "23"
+    },
+    {
+      "actualPrice": 3000,
+      "type": "women",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010793110-Blue-Teal-1000010793110_01-2100.jpg",
+      "price": 1299,
+      "title": "MELANGE Women Embroidered Round Neck A-line Kurta",
+      "id": "S4KswfB"
+    },
+    {
+      "actualPrice": 3000,
+      "type": "women",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010860504-Pink-Pink-1000010860504_01-2100.jpg",
+      "price": 1259,
+      "title": "MELANGE Women Printed Three-Quarter Sleeves A-Line Kurta",
+      "id": "FugOc2z"
+    }
   ]
 }

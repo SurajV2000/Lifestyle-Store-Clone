@@ -21,7 +21,7 @@ import { Loginfunction } from "../redux/authReducer/action";
 // import { Loginfunction } from "../redux/authreducer/action";
 
 
-import { Loginfunction } from "../redux/authReducer/action"
+// import { Loginfunction } from "../redux/authReducer/action"
 
 import { saveData } from "../utils/localStorageData";
 

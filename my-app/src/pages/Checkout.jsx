@@ -449,4 +449,4 @@ function Checkout() {
     )
 }
 
-export defaul
+export default Checkout

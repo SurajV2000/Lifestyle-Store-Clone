@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./Single.css";
+import axios from "axios"
 import {
   Box,
   chakra,
@@ -20,6 +21,7 @@ import {
   List,
   ListItem,
   Grid,
+  useToast
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
@@ -27,12 +29,30 @@ import { MdLocalShipping } from "react-icons/md";
 const Singlecardmen = () => {
     const { id } = useParams();
     console.log(+id - 1);
-  
+    const toast=useToast();
     const { men, isLoading, isError, total } = useSelector((store) => {
       return store.MenReducer;
     });
+    const [el] = men.filter((el)=>{
+      return el.id===id
+
+    })
+    console.log(el)
+    const handleAdd=()=>{
+         axios.post(`http://localhost:8080/cart`,el).then((res)=>{
+          toast({
+            title: 'Added to cart',
+            description: "You can checkout from Cart",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          })
+         }).catch((err)=>{
+          console.log(err)
+         })
+    }
   
-    const el = men[+id - 1];
+    
     return (
         <Container maxW={"90%"}>
         <SimpleGrid
@@ -246,6 +266,7 @@ const Singlecardmen = () => {
                 transform: "translateY(2px)",
                 boxShadow: "lg",
               }}
+              onClick={handleAdd}
             >
               Add to cart
             </Button>

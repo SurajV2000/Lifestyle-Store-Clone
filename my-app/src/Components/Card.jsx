@@ -12,9 +12,26 @@ import { transform } from "framer-motion";
 import "./Card.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Card = ({ actualPrice, type, id, image, price, title, discount }) => {
   const toast = useToast();
+  let el={
+    actualPrice,type,image, price, title, discount
+  }
+  const handleClick=()=>{
+    axios.post(`http://localhost:8080/cart`,el).then((res)=>{
+      toast({
+        title: 'Added to cart',
+        description: "You can checkout from Cart",
+        status: 'success',
+        duration: 9000,
+        isClosable: true,
+      })
+     }).catch((err)=>{
+      console.log(err)
+     })
+  }
   return (
     <Box
       className="product-card"
@@ -39,16 +56,7 @@ const Card = ({ actualPrice, type, id, image, price, title, discount }) => {
       </Link>
       <Button
         class="add-to-cart-btn"
-        onClick={() =>
-          toast({
-            position: "top",
-            title: "Added To Cart.",
-            description: "You can checkout from cart.",
-            status: "success",
-            duration: 1000,
-            isClosable: true,
-          })
-        }
+        onClick={handleClick}
       >
         Add To Cart
       </Button>
