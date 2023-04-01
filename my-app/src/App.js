@@ -1,11 +1,13 @@
-import "./App.css";
-import { Men } from "./pages/Men";
-
-
-import Navbar from "./Components/Home/Navbar";
+import "./App.css"
 
 import './App.css';
+import Signup from "./pages/SignUp";
+import Login from "./pages/Login";
+import MainRoutes from "./Components/MainRoutes";
 // import { Men } from './pages/Men';
+
+
+
 
 
 
@@ -33,8 +35,12 @@ function App() {
     <div className="App">
       {/* < Navbar/> */}
     {/* <Women/> */}
-      {/* <SignUp/> */}
       {/* <Login/> */}
+      {/* <Signup/> */}
+      {/* <Admin/> */}
+      {/* <Cart/> */}
+     <MainRoutes/>
+
       <Admin/>
       {/* <Cart/> */}
       {/* <Footer/> */}

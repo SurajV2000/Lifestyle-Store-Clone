@@ -1171,11 +1171,39 @@
       "id": 2
     },
     {
-      "firstName": "vaibhav",
-      "lastName": "porwal",
-      "email": "vaibhav7895@gmail.com",
-      "password": "12345",
+      "firstName": "sss",
+      "lastName": "qqq",
+      "email": "sq@gmail.com",
+      "password": "1234",
       "id": 3
+    },
+    {
+      "firstName": "we",
+      "lastName": "ef",
+      "email": "w@gmail.com",
+      "password": "7895",
+      "id": 4
+    },
+    {
+      "firstName": "a",
+      "lastName": "a",
+      "email": "vaibhavporwal94@gmail.com",
+      "password": "1234566",
+      "id": 5
+    },
+    {
+      "firstName": "s",
+      "lastName": "w",
+      "email": "s@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "firstName": "op",
+      "lastName": "qr",
+      "email": "q@gmail.com",
+      "password": "121212",
+      "id": 7
     }
   ],
   "cart": [

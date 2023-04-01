@@ -5,6 +5,7 @@ import {
     SIGNIN_FAILURE,
     SIGNIN_REQUEST,
     SIGNIN_SUCCESS,
+    GET_USER,
   } from "./actionTypes";
   import axios from "axios";
   
@@ -13,18 +14,30 @@ import {
     axios
       .post("http://localhost:8080/registeredUser", payload)
       .then((response) => {
-        dispatch({ type: SIGNUP_SUCCESS, payload: response.data });
-        console.log(response.data);
+        dispatch({ type: SIGNUP_SUCCESS});
+        
       })
       .catch((e) => {
         dispatch({ type: SIGNUP_FAILURE });
-        console.log(e);
+        
       });
   };
   
-  export const Loginfunction = (data) => (dispatch) => {
+  export const getdata = (dispatch) => {
     dispatch({ type: SIGNIN_REQUEST });
-    dispatch({ type: SIGNIN_SUCCESS, payload: data });
-    dispatch({ type: SIGNIN_FAILURE });
+    axios
+    .get("http://localhost:8080/registeredUser").then((res)=>{
+      
+      dispatch({ type: GET_USER, payload: res.data });
+    }).catch(()=>{
+      dispatch({ type: SIGNIN_FAILURE });
+    })
+    
+    
   };
+
+   export const loginFunction=(payload)=>(dispatch)=>{
+    dispatch({type:SIGNIN_SUCCESS,payload:payload})
+    console.log(payload)
+   }
   

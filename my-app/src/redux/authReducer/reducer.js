@@ -6,17 +6,19 @@ import {
     SIGNIN_REQUEST,
     SIGNIN_SUCCESS,
     SIGNOUT,
+    GET_USER
   } from "./actionTypes";
-  import { getLocalData, saveData } from "../../utils/localStorageData";
+  
   
   const SignUpState = {
     createAccountLoading: false,
     successCreate: false,
     createError: false,
-    userData: getLocalData("loggedUser") || {},
-    isAuth: getLocalData("isAuth") || false,
+    userData: [],
+    isAuth: false,
     isLoading: false,
     isError: false,
+    afterLoginUser:{}
   };
   
   export const reducer = (state = SignUpState, action) => {
@@ -34,8 +36,8 @@ import {
           createAccountLoading: false,
           successCreate: true,
           createError: false,
-          isAuth: false,
-          userData: payload,
+          
+          
         };
   
       case SIGNUP_FAILURE:
@@ -53,13 +55,12 @@ import {
         };
   
       case SIGNIN_SUCCESS:
-        const loggedIn = !state.isAuth;
-        saveData("isAuth", loggedIn);
+        
         return {
           ...state,
           isLoading: false,
-          isAuth: loggedIn,
-          userData: payload,
+          isAuth: true,
+          afterLoginUser:payload,
           isError: false,
         };
   
@@ -72,7 +73,7 @@ import {
       case SIGNOUT:
         return {
           ...state,
-          userData: {},
+          
           isAuth: false,
           isLoading: false,
           isError: false,
@@ -80,6 +81,12 @@ import {
           createAccountLoading: false,
           createError: false,
         };
+        case GET_USER:
+          return{
+            ...state,
+            userData:payload,
+            isAuth:true,
+          }
       default:
         return state;
     }

@@ -84,16 +84,6 @@ export default function Signup() {
     
         if(!checkAlready){
           dispatch(
-
-            // SignUpFunc({
-            //   userEmail: email,
-            //   password: password,
-            //   userfirstName: firstName,
-            //   userlastNAme: lastName,
-              
-            // })
-          )
-
             SignUpFunc({
               firstName: firstName,
               lastName: lastName,
@@ -101,6 +91,7 @@ export default function Signup() {
               password: password,
               
             })
+          )
           
 
           setEmail("");
