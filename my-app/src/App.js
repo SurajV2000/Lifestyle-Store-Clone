@@ -21,9 +21,6 @@ import { Women } from "./pages/Women";
 import MainRoutes from "./Components/MainRoutes";
 import Footer from "./Components/Home/Footer";
 
-// import MainRoutes from "./Components/MainRoutes";
-
-
 import Payment from "./pages/Payment";
 
 
@@ -39,14 +36,6 @@ function App() {
       {/* <Signup/> */}
       {/* <Admin/> */}
       {/* <Cart/> */}
-     <MainRoutes/>
-
-      <Admin/>
-      {/* <Cart/> */}
-      {/* <Footer/> */}
-
-
-    {/* <MainRoutes/> */}
 
 {/*       
       <Admin/>
@@ -56,9 +45,6 @@ function App() {
       <Men /> */}
 
       {/* <SignUp/> */}
-
-      {/* <Login/> */}
-
 
       {/* <Admin/> */}
       <Cart/>

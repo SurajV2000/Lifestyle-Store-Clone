@@ -17,13 +17,12 @@ import { useState,useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+
 import { useReducer } from "react";
 import { Loginfunction, getdata, loginFunction } from '../redux/authReducer/action';
 
 
 
-
-// import { Loginfunction } from "../redux/authReducer/action"
 
 import { saveData } from "../utils/localStorageData";
 
