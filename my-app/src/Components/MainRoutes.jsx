@@ -5,6 +5,8 @@ import { Men } from "../pages/Men";
 import { Women } from "../pages/Women";
 import Singlecardwomen from "./Singlecard";
 import Singlecardmen from "./Singlecardmen";
+import Login from "../pages/Login";
+import Signup from "../pages/SignUp";
 
 function MainRoutes() {
 
@@ -17,6 +19,8 @@ function MainRoutes() {
       <Route path="/women" element={<Women />} />
       <Route path="/men/:id" element={<Singlecardmen />} />
       <Route path="/women/:id" element={<Singlecardwomen/>}/>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }
