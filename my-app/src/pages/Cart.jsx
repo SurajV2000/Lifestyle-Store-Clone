@@ -23,18 +23,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../redux/cartReducer/action';
 import axios from "axios"
 
-  import {useNavigate } from "react-router";
-
-
 
 
  export const Cart = () => {
 
 
-    const [cartItem, setCartItems] = useState([]);
+  
 
    const navigate = useNavigate()
-    const [cartItems, setCartItems] = useState([
+    const [cartItem, setCartItems] = useState([
       {  
         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
         title:"Shirt",

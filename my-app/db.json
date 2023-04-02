@@ -825,7 +825,7 @@
       "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011259504-Blue-Navy-1000011259504_03-2100.jpg",
       "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011259504-Blue-Navy-1000011259504_04-2100.jpg",
       "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011259504-Blue-Navy-1000011259504_06-2100.jpg",
-      "actualPrice":2000,
+      "actualPrice": 2000,
       "category": "Casual Shirts",
       "price": 1274,
       "id": "21"
@@ -1164,91 +1164,69 @@
       "password": "1234"
     },
     {
-      "firstName": "vaibhav",
-      "lastName": "porwal",
-      "email": "vaibhav7895@gmail.com",
-      "password": "12345",
+      "firstName": "x",
+      "lastName": "y",
+      "email": "x@gmail.com",
+      "password": "1234",
       "id": 2
-    },
-    {
-      "firstName": "sss",
-      "lastName": "qqq",
-      "email": "sq@gmail.com",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "firstName": "we",
-      "lastName": "ef",
-      "email": "w@gmail.com",
-      "password": "7895",
-      "id": 4
-    },
-    {
-      "firstName": "a",
-      "lastName": "a",
-      "email": "vaibhavporwal94@gmail.com",
-      "password": "1234566",
-      "id": 5
-    },
-    {
-      "firstName": "s",
-      "lastName": "w",
-      "email": "s@gmail.com",
-      "password": "1234",
-      "id": 6
-    },
-    {
-      "firstName": "op",
-      "lastName": "qr",
-      "email": "q@gmail.com",
-      "password": "121212",
-      "id": 7
     }
   ],
   "cart": [
     {
-      "title": "BOSSINI Men Striped Casual Shirt",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_01-2100.jpg",
-      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_02-2100.jpg",
-      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_03-2100.jpg",
-      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_04-2100.jpg",
-      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011031614-Black-BLACK-1000011031614_06-2100.jpg",
-      "actualPrice": 3000,
-      "category": "Casual Shirts",
-      "price": 899,
-      "id": "24"
+      "title": "LEE Men Solid Slim Straight Jeans",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_07-2100.jpg",
+      "actualPrice": 2999,
+      "category": "Jeans",
+      "price": 2379,
+      "id": "41"
     },
     {
-      "title": "MELANGE Women Printed Three-Quarter Sleeves Straight Kurta",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_01-2100.jpg",
-      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_02-2100.jpg",
-      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_03-2100.jpg",
-      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_04-2100.jpg",
-      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882952-Beige-Blush-1000010882952_06-2100.jpg",
-      "price": 909,
-      "actualPrice": 3000,
+      "title": "GLOBAL DESI Women Printed Straight Kurta",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_06-2100.jpg",
+      "price": 1439,
+      "actualPrice": 1599,
       "category": "Kurtas and Kurtis",
-      "id": "23"
+      "id": "2"
     },
     {
-      "actualPrice": 3000,
-      "type": "women",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010793110-Blue-Teal-1000010793110_01-2100.jpg",
-      "price": 1299,
-      "title": "MELANGE Women Embroidered Round Neck A-line Kurta",
-      "id": "S4KswfB"
+      "actualPrice": 1800,
+      "type": "men",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": "47BGhqc"
     },
     {
+      "title": "U.S. POLO ASSN. Men Light Faded Skinny Fit Jeans",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_07-2100.jpg",
       "actualPrice": 3000,
-      "type": "women",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010860504-Pink-Pink-1000010860504_01-2100.jpg",
-      "price": 1259,
-      "title": "MELANGE Women Printed Three-Quarter Sleeves A-Line Kurta",
-      "id": "FugOc2z"
+      "category": "Jeans",
+      "price": 2519,
+      "id": "46"
+    },
+    {
+      "title": "FAME FOREVER Men Checked Slim Fit Casual Shirt",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_06-2100.jpg",
+      "actualPrice": 1300,
+      "category": "Casual Shirts",
+      "price": 779,
+      "id": "7"
     }
-  ],
-  "cart":[
-    
   ]
 }
