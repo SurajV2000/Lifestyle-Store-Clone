@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import Navbar from "../Components/Home/Navbar";
 import Footer from "../Components/Home/Footer";
-import { Form, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 
@@ -68,14 +68,14 @@ function Payment() {
         duration: 1000,
         isClosable: true,
       });
-    } else if (data.cardno.length != 16) {
+    } else if (data.cardno.length !== 16) {
       toast({
         description: "Please Enter a Valid Card Number",
         status: "error",
         duration: 1000,
         isClosable: true,
       });
-    } else if (data.cvv.length != 3) {
+    } else if (data.cvv.length !== 3) {
       toast({
         description: "Please Enter a Valid CVV",
         status: "error",
@@ -104,17 +104,19 @@ function Payment() {
     if (enteredotp === OTP) {
       cartItems.length > 0 &&
         cartItems.forEach((el) => [
-          axios.delete(`https://lifestyle-mock-server-api.onrender.com/cart/${el.id}`),
+          axios.delete(
+            `https://lifestyle-mock-server-api.onrender.com/cart/${el.id}`
+          ),
         ]);
 
       toast({
-        title:` Congratulations! Payment successful`,
+        title: ` Congratulations! Payment successful`,
         description: `Your Order has been Placed`,
         status: "success",
         isClosable: true,
         duration: 2000,
         position: "top",
-      })
+      });
 
       setTimeout(() => {
         navigate("/");
