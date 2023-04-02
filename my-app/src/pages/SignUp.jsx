@@ -13,14 +13,15 @@ import {
     Text,
     useColorModeValue,
     Link,
-    useToast
+    useToast,
+    Image
 } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { useNavigate } from "react-router-dom";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 // import { SignUpFunc } from "../redux/authReducer/action";
-
+import Logo from "../Asssets/logo2.png"
 // import { SignUpFunc } from "../redux/authreducer/action";
 
 
@@ -118,7 +119,8 @@ export default function Signup() {
     
       useEffect(() => {
         axios
-          .get("https://bright-pear-lizard.cyclic.app/registeredUser")
+
+          .get("https://lifestyle-mock-server-api.onrender.com/registeredUser")
           .then((response) => {
             setUserObj(response.data);
           })
@@ -129,19 +131,25 @@ export default function Signup() {
 
     return (
 
+      <Box  bg={useColorModeValue('gray.50', 'gray.800')}>
+  <Image width="300px" height="70px" _hover={{cursor:"pointer"}} src={Logo} onClick={()=>navigate("/")}/>
         <Flex
-            minH={'100vh'}
+            minH={'80vh'}
             align={'center'}
             justify={'center'}
-            bg={useColorModeValue('gray.50', 'gray.800')}>
+            backgroundImage={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf92GKTYc1k5BNpApxHinSFKnIXNU9wI9rWyibtoBH_bgmWuVBg5SFKoareRSb7jBlLFo&usqp=CAU"}
+           >
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
-                    <Heading fontSize={'4xl'} textAlign={'center'}>
+                    <Heading fontSize={'4xl'} textAlign={'center'} color={'saddlebrown '}>
                         Sign up
                     </Heading>
+
                     <Text fontSize={'lg'} color={'gray.600'}>
-                        to enjoy all of our cool features ✌️
+                        Welcome to OutFit Store ✌️
+                      
                     </Text>
+                    
                 </Stack>
 
 
@@ -195,23 +203,25 @@ export default function Signup() {
                                 onClick={SignupRequest}
                                 loadingText="Submitting"
                                 size="lg"
-                                bg={'blue.400'}
+                                bg={'#df9018'}
                                 color={'white'}
                                 _hover={{
-                                    bg: 'blue.500',
+                                    bg: 'pink.500',
                                 }}>
                                 Sign up
                             </Button>
                         </Stack>
                         <Stack pt={6}>
                             <Text align={'center'}>
-                                Already a user? <Link color={'blue.400'}>Login</Link>
+                                Already a user? <Link color={'blue.400'} href="/login" >Login</Link>
+
                             </Text>
                         </Stack>
                     </Stack>
                 </Box>
             </Stack>
         </Flex>
+        </Box>
     );
 }
 

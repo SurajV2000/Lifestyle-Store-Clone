@@ -1,30 +1,26 @@
 import React, { useState, useEffect } from "react";
 import {
-  Box,
-  Table,
-  Thead,
-  Tbody,
-  Flex,
-  Tr,
-  Th,
-  Td,
-  Button,
-  TableContainer,
-  Text,
-  Heading,
-  Image,
-  useToast,
-} from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
-import { Navigate, useNavigate } from "react-router";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  addToCart,
-  decrementQuantity,
-  incrementQuantity,
-  removeFromCart,
-} from "../redux/cartReducer/action";
-import axios from "axios";
+    Box,
+    Table,
+    Thead,
+    Tbody,
+    Flex,
+    Tr,
+    Th,
+    Td,
+    Button,
+    TableContainer,
+    Text,
+    Heading,
+    Image,
+  } from "@chakra-ui/react";
+  import { CloseIcon } from "@chakra-ui/icons";
+
+  import { Navigate, useNavigate } from "react-router";
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart } from '../redux/cartReducer/action';
+import axios from "axios"
+
 
 export const Cart = () => {
   const navigate = useNavigate();
@@ -86,10 +82,7 @@ export const Cart = () => {
         dispatch(decrementQuantity(id));
         getData();
       })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, e) => total + e.price * e.quantity, 0);

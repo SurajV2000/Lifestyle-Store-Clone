@@ -52,6 +52,7 @@ import {
         return {
           ...state,
           isLoading: true,
+          userData:payload,
         };
   
       case SIGNIN_SUCCESS:
@@ -84,8 +85,8 @@ import {
         case GET_USER:
           return{
             ...state,
-            userData:payload,
-            isAuth:true,
+            
+            
           }
       default:
         return state;

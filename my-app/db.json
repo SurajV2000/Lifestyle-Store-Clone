@@ -1153,6 +1153,19 @@
       "category": "Jeans",
       "price": 2123,
       "id": "48"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/31AQZJ53gnL._AC_SY200_.jpg",
+      "img1": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAtAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAACBQEGB//EADYQAAIBAwMDAgMGBQQDAAAAAAECAAMRIQQSMSJBURNhBQZxFCMyUoHBFUKRobGiwvDxM0Ni/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAiEQACAgICAgIDAAAAAAAAAAAAAQIREiEDMRNBFGEEQlH/2gAMAwEAAhEDEQA/APcKsIFnUFxCKsTYkiKsIqzoEIokNlpCtdbsITTpiEqIN0vRXETZaiQLOhIQJO0yrs6qQSh2tbsbA/vIsqhLWUw76ZP5vVDD9I8qSj0N2poVPybv7iNqkhsdA1Ubrd4ZUlKVI+sWPiNqskCqpIaNzDquJYDMdE5AhTsJwpD2kIjoWQoyQTJHGWDZZJaYmVlCsZZYMrGAqyQDpHWWCdZSYNCDJmdjBTMkvIjER0p3U1MbVIl8Na6AHxY/UYmmBKb2RFCmrY0HpPfoJ2t7XjaLgSmppirp3QjtiVoVx9nuOUwwkt6LS2GdLkS9NLSwKsAQeZcASLKAqSalpzTUBT1OpZbn1HDke+0D/bC0k+8l8LWYHA2XJ+hiGXC5EuFyYp8HqfaNIK4dqi1XZ0ZvyliVH6C0fAzJegRKQ5MOBKItuIQcRomRYSSCSUQSSSSAjjQbCEMo0llIEwg2EMZUiI0AEQTLGSsGRAYqUzJDFcyR2I8ifilDSaghnADWP9o7/HNOP/Ys+L/xOvqaiis5uvcGV1Ot1KuQKpt+07/DFumcPmkj6",
+      "img2": "",
+      "img3": "",
+      "img4": "",
+      "price": "22222",
+      "actualPrice": 0,
+      "title": "",
+      "gender": "men",
+      "category": "Casual Shirts",
+      "id": "sIE_nha"
     }
   ],
   "registeredUser": [
@@ -1164,74 +1177,83 @@
       "password": "1234"
     },
     {
-      "firstName": "vaibhav",
-      "lastName": "porwal",
-      "email": "vaibhav7895@gmail.com",
-      "password": "12345",
+      "firstName": "x",
+      "lastName": "y",
+      "email": "x@gmail.com",
+      "password": "1234",
       "id": 2
-    },
-    {
-      "firstName": "sss",
-      "lastName": "qqq",
-      "email": "sq@gmail.com",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "firstName": "we",
-      "lastName": "ef",
-      "email": "w@gmail.com",
-      "password": "7895",
-      "id": 4
-    },
-    {
-      "firstName": "a",
-      "lastName": "a",
-      "email": "vaibhavporwal94@gmail.com",
-      "password": "1234566",
-      "id": 5
-    },
-    {
-      "firstName": "s",
-      "lastName": "w",
-      "email": "s@gmail.com",
-      "password": "1234",
-      "id": 6
-    },
-    {
-      "firstName": "op",
-      "lastName": "qr",
-      "email": "q@gmail.com",
-      "password": "121212",
-      "id": 7
     }
   ],
+
   "cart": [
     {
-      "actualPrice": 1000,
+
+      "title": "LEE Men Solid Slim Straight Jeans",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_07-2100.jpg",
+      "actualPrice": 2999,
+      "category": "Jeans",
+      "price": 2379,
+      "id": "41"
+    },
+    {
+      "title": "GLOBAL DESI Women Printed Straight Kurta",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010631297-Yellow-Mustard-1000010631297_06-2100.jpg",
+      "price": 1439,
+      "actualPrice": 1599,
+      "category": "Kurtas and Kurtis",
+      "id": "2"
+    },
+    {
+
+      "actualPrice": 1800,
       "type": "men",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011365455-White-White-1000011365455_01-2100.jpg",
-      "price": 899,
-      "title": "BOSSINI Men Printed Slim Casual Shirt",
-      "quantity": 1,
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": "47BGhqc"
+    },
+    {
+      "title": "U.S. POLO ASSN. Men Light Faded Skinny Fit Jeans",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011265504-Blue-MidStone-1000011265504_07-2100.jpg",
+      "actualPrice": 3000,
+      "category": "Jeans",
+      "price": 2519,
+      "id": "46"
+    },
+    {
+      "title": "FAME FOREVER Men Checked Slim Fit Casual Shirt",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_01-2100.jpg",
+      "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_02-2100.jpg",
+      "img2": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_03-2100.jpg",
+      "img3": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_04-2100.jpg",
+      "img4": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011148296-Pink-LightPink-1000011148296_06-2100.jpg",
+      "actualPrice": 1300,
+      "category": "Casual Shirts",
+      "price": 779,
+      "id": "7"
+
       "id": 1
     },
     {
-      "actualPrice": 1600,
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011196949-Blue-Navy-1000011196949_01-2100.jpg",
-      "price": "2011",
-      "title": "PEPE JEANS Men Printed Casual Shirt",
-      "quantity": 1,
-      "id": 2
-    },
-    {
-      "actualPrice": 1000,
+      "actualPrice": 1800,
       "type": "men",
-      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011365455-White-White-1000011365455_01-2100.jpg",
-      "price": 899,
-      "title": "BOSSINI Men Printed Slim Casual Shirt",
-      "quantity": 1,
-      "id": 3
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": 2
+
     }
   ]
 }
