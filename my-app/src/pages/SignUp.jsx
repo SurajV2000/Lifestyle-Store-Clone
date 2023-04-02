@@ -118,7 +118,7 @@ export default function Signup() {
     
       useEffect(() => {
         axios
-          .get("http://localhost:8080/registeredUser")
+          .get("https://bright-pear-lizard.cyclic.app/registeredUser")
           .then((response) => {
             setUserObj(response.data);
           })

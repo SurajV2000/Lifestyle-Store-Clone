@@ -16,22 +16,32 @@ import axios from "axios";
 
 const Card = ({ actualPrice, type, id, image, price, title, discount }) => {
   const toast = useToast();
-  let el={
-    actualPrice,type,image, price, title, discount
-  }
-  const handleClick=()=>{
-    axios.post(`http://localhost:8080/cart`,el).then((res)=>{
-      toast({
-        title: 'Added to cart',
-        description: "You can checkout from Cart",
-        status: 'success',
-        duration: 9000,
-        isClosable: true,
+  let el = {
+    actualPrice,
+    type,
+    image,
+    price,
+    title,
+    discount,
+    quantity: 1,
+  };
+  const handleClick = () => {
+    axios
+      .post(`https://lifestyle-mock-server-api.onrender.com/cart`, el)
+      .then((res) => {
+        toast({
+          title: "Added to cart",
+          description: "You can checkout from Cart",
+          status: "success",
+          position: "top",
+          duration: 1000,
+          isClosable: true,
+        });
       })
-     }).catch((err)=>{
-      console.log(err)
-     })
-  }
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <Box
       className="product-card"
@@ -46,7 +56,7 @@ const Card = ({ actualPrice, type, id, image, price, title, discount }) => {
           <Heading paddingTop={"8px"} size="md">
             ₹{price}
           </Heading>
-          <Text as='del' fontSize={"13px"} paddingTop={"10px"}>
+          <Text as="del" fontSize={"13px"} paddingTop={"10px"}>
             ₹{actualPrice}
           </Text>
         </Flex>
@@ -54,10 +64,7 @@ const Card = ({ actualPrice, type, id, image, price, title, discount }) => {
           {title}{" "}
         </Text>
       </Link>
-      <Button
-        class="add-to-cart-btn"
-        onClick={handleClick}
-      >
+      <Button class="add-to-cart-btn" onClick={handleClick}>
         Add To Cart
       </Button>
     </Box>
