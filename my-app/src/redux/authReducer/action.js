@@ -12,7 +12,7 @@ import {
   export const SignUpFunc = (payload) => (dispatch) => {
     dispatch({ type: SIGNUP_REQUEST });
     axios
-      .post("http://localhost:8080/registeredUser", payload)
+      .post("https://lifestyle-mock-server-api.onrender.com/registeredUser", payload)
       .then((response) => {
         dispatch({ type: SIGNUP_SUCCESS});
         
@@ -24,11 +24,11 @@ import {
   };
   
   export const getdata = (dispatch) => {
-    dispatch({ type: SIGNIN_REQUEST });
+    
     axios
-    .get("http://localhost:8080/registeredUser").then((res)=>{
+    .get("https://lifestyle-mock-server-api.onrender.com/registeredUser").then((res)=>{
       
-      dispatch({ type: GET_USER, payload: res.data });
+      dispatch({ type: SIGNIN_REQUEST, payload: res.data });
     }).catch(()=>{
       dispatch({ type: SIGNIN_FAILURE });
     })

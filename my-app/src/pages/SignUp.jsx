@@ -119,7 +119,7 @@ export default function Signup() {
     
       useEffect(() => {
         axios
-          .get("http://localhost:8080/registeredUser")
+          .get("https://lifestyle-mock-server-api.onrender.com/registeredUser")
           .then((response) => {
             setUserObj(response.data);
           })
@@ -136,12 +136,14 @@ export default function Signup() {
             minH={'80vh'}
             align={'center'}
             justify={'center'}
-            bg={useColorModeValue('gray.50', 'gray.800')}>
+            backgroundImage={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf92GKTYc1k5BNpApxHinSFKnIXNU9wI9rWyibtoBH_bgmWuVBg5SFKoareRSb7jBlLFo&usqp=CAU"}
+           >
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
-                    <Heading fontSize={'4xl'} textAlign={'center'}>
+                    <Heading fontSize={'4xl'} textAlign={'center'} color={'saddlebrown '}>
                         Sign up
                     </Heading>
+
                     <Text fontSize={'lg'} color={'gray.600'}>
                         Welcome to OutFit Store ✌️
                       
@@ -210,7 +212,8 @@ export default function Signup() {
                         </Stack>
                         <Stack pt={6}>
                             <Text align={'center'}>
-                                Already a user? <Link onClick={()=>navigate("/login")} color={'blue.400'}>Login</Link> 
+                                Already a user? <Link color={'blue.400'} href="/login" >Login</Link>
+
                             </Text>
                         </Stack>
                     </Stack>

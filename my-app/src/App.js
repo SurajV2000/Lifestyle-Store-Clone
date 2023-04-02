@@ -1,33 +1,13 @@
 import "./App.css"
 import './App.css';
-import Signup from "./pages/SignUp";
+import Navbar from "./Components/Home/Navbar";
 import MainRoutes from "./Components/MainRoutes";
-
-
-
-import { Cart } from './pages/Cart';
-import Checkout from "./pages/Checkout"
-import SignUp from './pages/SignUp';
-import HomePage from './pages/HomePage';
-
-import { Women } from "./pages/Women";
-import Footer from "./Components/Home/Footer";
-import Payment from "./pages/Payment";
-import Admin from "./pages/Admin";
-// import Navbar from "./Components/Home/Navbar";
-
-
-
-
 
 function App() {
   return (
     <div className="App">
 
       <MainRoutes/>
-      {/* <SignUp/> */}
-      {/* <Login/> */}
-      
 
     </div>
   );

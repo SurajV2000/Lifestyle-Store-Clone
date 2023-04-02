@@ -25,21 +25,17 @@ import axios from "axios"
 
 
 
-
-
  export const Cart = () => {
-
 
 
   
 
    const navigate = useNavigate()
-    const [cartItem, setCartItems] = useState([
-   
-    ]);
+
+    
 
 
-   const navigate = useNavigate()
+ 
    
 
 
