@@ -1219,5 +1219,23 @@
       "id": 7
     }
   ],
-  "cart": []
+
+  "cart": [
+    {
+      "actualPrice": 1800,
+      "type": "men",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": 1
+    },
+    {
+      "actualPrice": 1800,
+      "type": "men",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": 2
+    }
+  ]
 }

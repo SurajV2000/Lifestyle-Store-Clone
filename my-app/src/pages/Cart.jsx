@@ -30,7 +30,7 @@ import axios from "axios"
  export const Cart = () => {
 
 
-    const [cartItem, setCartItems] = useState([]);
+
 
    const navigate = useNavigate()
    
@@ -38,14 +38,14 @@ import axios from "axios"
     const [count, setCount] = useState(1);
     
     const dispatch=useDispatch();
-    const {cartItems}=useSelector((store)=>store.cartReducer)
-    console.log(cartItems)
+    const {cartitems}=useSelector((store)=>store.cartReducer)
+    console.log(cartitems)
     
     let saved = 0;
     const getData=()=>{
       axios.get(`http://localhost:8080/cart`).then((res)=>{
         dispatch(addToCart(res.data))
-        setCartItems(cartItems)
+        setCartItems(cartitems)
       }).catch((err)=>{
         console.log(err);
       })
