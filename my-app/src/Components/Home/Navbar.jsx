@@ -105,8 +105,8 @@ const Navbar = () => {
                                     <MenuItem>Order History</MenuItem>
                                     <MenuItem>My Address</MenuItem>
                                     <MenuItem>Payments</MenuItem>
-                                    <MenuItem>My Credit</MenuItem>
                                     <MenuItem>Reviews</MenuItem>
+                                    <MenuItem>Admin</MenuItem>
                                 </MenuGroup>
 
                                 {isAuth === true ?(
@@ -115,8 +115,8 @@ const Navbar = () => {
 
                                     (<MenuItem _hover={{ backgroundColor: "pink" }} backgroundColor="#fdb852"
                                     onClick={()=>{
-                                        navigate('/login')
-                                    }} >Sign In</MenuItem>)}
+                                        navigate('/signup')
+                                    }} >Sign Up</MenuItem>)}
 
 
 

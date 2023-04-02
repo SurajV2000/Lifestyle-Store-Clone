@@ -109,19 +109,20 @@ function Payment() {
     e.preventDefault();
     if (enteredotp === OTP) {
       toast({
-        description: `Payment Successful & Your Order has been Placed`,
+        title:` Congratulations! Payment successful`,
+        description: `Your Order has been Placed`,
         status: "success",
         isClosable: true,
-        duration: 1000,
+        duration: 2000,
         position: "top",
-      });
+      })
 
       setTimeout(()=>{
           navigate("/")
       },2000)
     } else {
       toast({
-        description: "Enter correct OTP",
+        description: "Incorrect OTP",
         status: "error",
         duration: 1000,
         isClosable: true,

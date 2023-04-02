@@ -9,7 +9,8 @@ import {
   Button,
   RadioGroup,
   Stack,
-  Radio
+  Radio,
+  useToast
 } from '@chakra-ui/react'
 import axios from 'axios'
 
@@ -29,6 +30,7 @@ const initailState={
 
 const AdminManageProduct=()=>{
   const [product,setProduct]=useState(initailState);
+  const toast=useToast()
 
   const handleChange=(e)=>{
       let {name,value}=e.target;
@@ -42,9 +44,16 @@ const AdminManageProduct=()=>{
     e.preventDefault();
 
 
-     axios.post(`http://localhost:8080/${product.gender}`,product)
+     axios.post(`https://lifestyle-mock-server-api.onrender.com/${product.gender}`,product)
      .then((res)=>{
-      alert("Added Product")
+      toast({
+        title: 'Product added successfully.',
+        description: "We've added your product",
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+        position:"top"
+      })
      })
      .catch((error)=>{
        console.log(error)

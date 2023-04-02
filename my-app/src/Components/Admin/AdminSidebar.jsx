@@ -10,7 +10,7 @@ import {MdOutlineAddCircleOutline } from "react-icons/md";
 const sidebarData=[
 {title:"Products",icon:<MdOutlineProductionQuantityLimits/>,link:"/products"},
 {title:"Add Product",icon:<MdOutlineAddCircleOutline/>,link:"/manageProduct"},
-{title:"Manage Users",icon:<BsGraphUpArrow/>,link:"/manageProduct"},
+{title:"Manage Users",icon:<BsGraphUpArrow/>,link:"/users"},
 ]
 
 function AdminSidebar() {
@@ -20,8 +20,8 @@ function AdminSidebar() {
       {
         sidebarData.map((el,id)=>{
           return(
-            <Link to={el.link}>
-            <li key={id}
+            <Link to={el.link} key={id}>
+            <li 
              className="row"
              >
             <div className='icon'>{el.icon}</div>  

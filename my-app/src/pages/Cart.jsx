@@ -23,7 +23,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../redux/cartReducer/action';
 import axios from "axios"
 
-  import {useNavigate } from "react-router";
 
 
 
@@ -31,55 +30,30 @@ import axios from "axios"
  export const Cart = () => {
 
 
+
   
 
    const navigate = useNavigate()
     const [cartItem, setCartItems] = useState([
-      {  
-        image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-        title:"Shirt",
-        brand:"Nike",
-        price:9199,
-        id:1,
-        quantity: 2,
-     },
-     {   
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:9939,
-         id:2,
-         quantity: 2,
-      },
-      {  
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:1999,
-         id:3,
-         quantity: 2,
-      },
-      {  
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:99,
-         id:4,
-         quantity: 2,
-      }
+   
     ]);
+
+
+   const navigate = useNavigate()
+   
+
 
     const [count, setCount] = useState(1);
     
     const dispatch=useDispatch();
-    const {cartItems}=useSelector((store)=>store.cartReducer)
-    console.log(cartItems)
+    const {cartitems}=useSelector((store)=>store.cartReducer)
+    console.log(cartitems)
     
     let saved = 0;
     const getData=()=>{
       axios.get(`http://localhost:8080/cart`).then((res)=>{
         dispatch(addToCart(res.data))
-        setCartItems(cartItems)
+        setCartItems(cartitems)
       }).catch((err)=>{
         console.log(err);
       })
