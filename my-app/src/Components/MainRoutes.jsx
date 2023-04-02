@@ -12,7 +12,7 @@ import Signup from "../pages/SignUp";
 import Checkout from "../pages/Checkout";
 import Payment from "../pages/Payment";
 import { Cart } from "../pages/Cart";
-import Login from "../pages/Login";
+
 
 function MainRoutes() {
 
@@ -32,7 +32,7 @@ function MainRoutes() {
       <Route path="/checkout" element={<Checkout/>}/>
       <Route path="/payment" element={<Payment/>}/>
       <Route path="/cart" element={<Cart/>}/>
-      <Route path="/login" element={<Login/>}/>
+  
 
 
     </Routes>

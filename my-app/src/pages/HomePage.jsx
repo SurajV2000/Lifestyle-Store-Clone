@@ -43,7 +43,7 @@ function HomePage() {
         position="absolute"
         top={{ base: "117px", sm: "115px", md: "142px", lg: "125px" }}
         left={{ base: "5%", sm: "27%", md: "30%", lg: "40%" }} >
-        New arrivals in womenswear upto 30% off ❤️
+        New arrivals in mens and womens wear upto 30% off ❤️
       </Text>
       </Box>
 
