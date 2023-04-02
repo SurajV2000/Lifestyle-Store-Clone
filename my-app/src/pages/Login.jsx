@@ -24,7 +24,6 @@ import { Loginfunction, getdata, loginFunction } from '../redux/authReducer/acti
 
 
 
-import { saveData } from "../utils/localStorageData";
 
 
 
