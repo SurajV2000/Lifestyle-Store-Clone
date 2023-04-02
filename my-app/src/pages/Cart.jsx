@@ -215,11 +215,7 @@ import axios from "axios"
             </Table>
           </TableContainer>
           <Flex justifyContent={"space-between"} mt={8}>
-            {/* <Box width={"45%"}>
-              <Button variant={"outline"} float={"left"} onClick={handleEmpty}>
-                Empty Basket
-              </Button>
-            </Box> */}
+          
             <Box width={"45%"} border="1px solid #e8e8e8 ">
               <Flex
                 justifyContent={"space-between"}
