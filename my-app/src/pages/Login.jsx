@@ -21,6 +21,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Logo from "../Asssets/logo2.png"
 import { useReducer } from "react";
+
 import { Loginfunction, getdata, loginFunction } from '../redux/authReducer/action';
 
 
@@ -159,13 +160,15 @@ export default function Login() {
             </Text>
           </Stack>
           <Box
-            rounded={'lg'}
-            bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
-            p={8}>
+            rounded={"lg"}
+            bg={useColorModeValue("white", "gray.700")}
+            boxShadow={"lg"}
+            p={8}
+          >
             <Stack spacing={4}>
               <FormControl id="email">
                 <FormLabel>Email address</FormLabel>
+
                 <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
               </FormControl>
               <FormControl id="password">
@@ -174,14 +177,21 @@ export default function Login() {
               </FormControl>
               <Stack spacing={10}>
                 <Stack
-                  direction={{ base: 'column', sm: 'row' }}
-                  align={'start'}
-                  justify={'space-between'}>
+                  direction={{ base: "column", sm: "row" }}
+                  align={"start"}
+                  justify={"space-between"}
+                >
                   <Checkbox>Remember me</Checkbox>
-                  <Link color={'blue.400'}>Forgot password?</Link>
+                  <Link color={"blue.400"}>Forgot password?</Link>
                 </Stack>
                 <Button
                   onClick={SendSignInRequest}
+                  bg={"blue.400"}
+                  color={"white"}
+                  _hover={{
+                    bg: "blue.500",
+                  }}
+                >
                   bg={'#df9018'}
                   color={'white'}
                   _hover={{
@@ -199,6 +209,9 @@ export default function Login() {
           </Box>
         </Stack>
       </Flex>
+    </Stack>
+  );
+}
     </Box>
   );
 }

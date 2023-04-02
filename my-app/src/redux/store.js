@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import {reducer as MenReducer} from "./MenReducer/reducer"
 import {reducer as cartReducer} from "./cartReducer/reducer"
 
-
+import {reducer as cartReducer} from "../redux/cartReducer/reducer"
 import {reducer as AuthReducer} from "../redux/authReducer/reducer"
 
 

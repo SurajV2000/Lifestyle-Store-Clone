@@ -1187,6 +1187,7 @@
 
   "cart": [
     {
+
       "title": "LEE Men Solid Slim Straight Jeans",
       "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_01-2100.jpg",
       "img1": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010884967-Blue-DarkStone-1000010884967_02-2100.jpg",
@@ -1252,6 +1253,7 @@
       "price": 1324,
       "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
       "id": 2
+
     }
   ]
 }

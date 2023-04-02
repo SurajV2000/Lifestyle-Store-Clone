@@ -119,6 +119,7 @@ export default function Signup() {
     
       useEffect(() => {
         axios
+
           .get("https://lifestyle-mock-server-api.onrender.com/registeredUser")
           .then((response) => {
             setUserObj(response.data);
