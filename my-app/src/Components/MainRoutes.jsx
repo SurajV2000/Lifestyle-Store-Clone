@@ -32,7 +32,7 @@ function MainRoutes() {
       <Route path="/checkout" element={<Checkout/>}/>
       <Route path="/payment" element={<Payment/>}/>
       <Route path="/cart" element={<Cart/>}/>
-      <Route path="/login" element={<Login/>}/>
+  
 
 
     </Routes>

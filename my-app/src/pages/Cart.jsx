@@ -31,52 +31,25 @@ import axios from "axios"
   
 
    const navigate = useNavigate()
-    const [cartItem, setCartItems] = useState([
-      {  
-        image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-        title:"Shirt",
-        brand:"Nike",
-        price:9199,
-        id:1,
-        quantity: 2,
-     },
-     {   
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:9939,
-         id:2,
-         quantity: 2,
-      },
-      {  
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:1999,
-         id:3,
-         quantity: 2,
-      },
-      {  
-         image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011932836-Red-Red-1000011932836_01-2100.jpg",
-         title:"Shirt",
-         brand:"Nike",
-         price:99,
-         id:4,
-         quantity: 2,
-      }
-    ]);
+
+    
+
+
+ 
+   
+
 
     const [count, setCount] = useState(1);
     
     const dispatch=useDispatch();
-    const {cartItems}=useSelector((store)=>store.cartReducer)
-    console.log(cartItems)
+    const {cartitems}=useSelector((store)=>store.cartReducer)
+    console.log(cartitems)
     
     let saved = 0;
     const getData=()=>{
       axios.get(`http://localhost:8080/cart`).then((res)=>{
         dispatch(addToCart(res.data))
-        setCartItems(cartItems)
+        setCartItems(cartitems)
       }).catch((err)=>{
         console.log(err);
       })
@@ -86,11 +59,11 @@ import axios from "axios"
     const handleDelete=(id)=>{
       setCartItems(cartItems.filter((e) => e.id !== id));
     
-      // axios.delete(`http://localhost:8080/cart/${id}`).then((res)=>{
-      //   dispatch(removeFromCart(id))
-      // }).catch((err)=>{
-      //   console.log(err)
-      // })
+      axios.delete(`http://localhost:8080/cart/${id}`).then((res)=>{
+        dispatch(removeFromCart(id))
+      }).catch((err)=>{
+        console.log(err)
+      })
     }
 
    
@@ -212,11 +185,7 @@ import axios from "axios"
             </Table>
           </TableContainer>
           <Flex justifyContent={"space-between"} mt={8}>
-            {/* <Box width={"45%"}>
-              <Button variant={"outline"} float={"left"} onClick={handleEmpty}>
-                Empty Basket
-              </Button>
-            </Box> */}
+          
             <Box width={"45%"} border="1px solid #e8e8e8 ">
               <Flex
                 justifyContent={"space-between"}

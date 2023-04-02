@@ -4,10 +4,11 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { getwomens } from "../redux/MenReducer/action";
-import { Box, Flex, Grid, Spinner } from "@chakra-ui/react";
+import { Box, Flex,Text, Grid, Progress, Spinner } from "@chakra-ui/react";
 import Card from "../Components/Card";
 import Menfilter from "../Components/Filter/Menfilter";
 import Pagination1 from "../Components/Filter/Pagination1";
+import Navbar from "../Components/Home/Navbar";
 
 export const Women = () => {
   const [searchParams] = useSearchParams();
@@ -34,6 +35,23 @@ export const Women = () => {
 
   return (
     <div>
+      <Navbar/>
+       <Box>
+      <Progress
+        colorScheme='pink'
+        hasStripe
+        height='42px'
+        value={100}
+        isAnimated />
+      <Text
+        color={"white"}
+        fontSize={{ base: "80%", sm: "100%", lg: "100%" }}
+        position="absolute"
+        top={{ base: "117px", sm: "115px", md: "142px", lg: "85px" }}
+        left={{ base: "5%", sm: "27%", md: "30%", lg: "40%" }} >
+        New arrivals in womenswear upto 30% off ❤️
+      </Text>
+      </Box>
       <Menfilter type={"women"} />
       {isLoading ? (
         <Box

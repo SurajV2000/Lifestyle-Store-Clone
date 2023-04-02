@@ -1153,6 +1153,19 @@
       "category": "Jeans",
       "price": 2123,
       "id": "48"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/31AQZJ53gnL._AC_SY200_.jpg",
+      "img1": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAtAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAACBQEGB//EADYQAAIBAwMDAgMGBQQDAAAAAAECAAMRIQQSMSJBURNhBQZxFCMyUoHBFUKRobGiwvDxM0Ni/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAiEQACAgICAgIDAAAAAAAAAAAAAQIREiEDMRNBFGEEQlH/2gAMAwEAAhEDEQA/APcKsIFnUFxCKsTYkiKsIqzoEIokNlpCtdbsITTpiEqIN0vRXETZaiQLOhIQJO0yrs6qQSh2tbsbA/vIsqhLWUw76ZP5vVDD9I8qSj0N2poVPybv7iNqkhsdA1Ubrd4ZUlKVI+sWPiNqskCqpIaNzDquJYDMdE5AhTsJwpD2kIjoWQoyQTJHGWDZZJaYmVlCsZZYMrGAqyQDpHWWCdZSYNCDJmdjBTMkvIjER0p3U1MbVIl8Na6AHxY/UYmmBKb2RFCmrY0HpPfoJ2t7XjaLgSmppirp3QjtiVoVx9nuOUwwkt6LS2GdLkS9NLSwKsAQeZcASLKAqSalpzTUBT1OpZbn1HDke+0D/bC0k+8l8LWYHA2XJ+hiGXC5EuFyYp8HqfaNIK4dqi1XZ0ZvyliVH6C0fAzJegRKQ5MOBKItuIQcRomRYSSCSUQSSSSAjjQbCEMo0llIEwg2EMZUiI0AEQTLGSsGRAYqUzJDFcyR2I8ifilDSaghnADWP9o7/HNOP/Ys+L/xOvqaiis5uvcGV1Ot1KuQKpt+07/DFumcPmkj6",
+      "img2": "",
+      "img3": "",
+      "img4": "",
+      "price": "22222",
+      "actualPrice": 0,
+      "title": "",
+      "gender": "men",
+      "category": "Casual Shirts",
+      "id": "sIE_nha"
     }
   ],
   "registeredUser": [
@@ -1171,6 +1184,7 @@
       "id": 2
     }
   ],
+
   "cart": [
     {
       "title": "LEE Men Solid Slim Straight Jeans",
@@ -1197,6 +1211,7 @@
       "id": "2"
     },
     {
+
       "actualPrice": 1800,
       "type": "men",
       "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
@@ -1227,6 +1242,16 @@
       "category": "Casual Shirts",
       "price": 779,
       "id": "7"
+
+      "id": 1
+    },
+    {
+      "actualPrice": 1800,
+      "type": "men",
+      "image": "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011511199-White-White-1000011511199_01-2100.jpg",
+      "price": 1324,
+      "title": "PUMA SPORT Men Printed Super Slim Fit Casual Shirt",
+      "id": 2
     }
   ]
 }
