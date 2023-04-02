@@ -4,11 +4,9 @@ import {
   Flex,
   Heading,
   Image,
-  position,
   Text,
   useToast,
 } from "@chakra-ui/react";
-import { transform } from "framer-motion";
 import "./Card.css";
 import React from "react";
 import { Link } from "react-router-dom";

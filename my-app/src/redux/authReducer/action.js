@@ -5,7 +5,7 @@ import {
     SIGNIN_FAILURE,
     SIGNIN_REQUEST,
     SIGNIN_SUCCESS,
-    GET_USER,
+    SIGNOUT,
   } from "./actionTypes";
   import axios from "axios";
   
@@ -41,3 +41,7 @@ import {
     console.log(payload)
    }
   
+
+   export const  logout=(dispatch)=>{
+    dispatch({type:SIGNOUT})
+   }
