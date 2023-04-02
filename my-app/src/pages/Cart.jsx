@@ -31,9 +31,17 @@ import axios from "axios"
 
 
 
+  
+
+   const navigate = useNavigate()
+    const [cartItem, setCartItems] = useState([
+   
+    ]);
+
 
    const navigate = useNavigate()
    
+
 
     const [count, setCount] = useState(1);
     
@@ -55,11 +63,11 @@ import axios from "axios"
     const handleDelete=(id)=>{
       setCartItems(cartItems.filter((e) => e.id !== id));
     
-      // axios.delete(`http://localhost:8080/cart/${id}`).then((res)=>{
-      //   dispatch(removeFromCart(id))
-      // }).catch((err)=>{
-      //   console.log(err)
-      // })
+      axios.delete(`http://localhost:8080/cart/${id}`).then((res)=>{
+        dispatch(removeFromCart(id))
+      }).catch((err)=>{
+        console.log(err)
+      })
     }
 
    
@@ -181,11 +189,7 @@ import axios from "axios"
             </Table>
           </TableContainer>
           <Flex justifyContent={"space-between"} mt={8}>
-            {/* <Box width={"45%"}>
-              <Button variant={"outline"} float={"left"} onClick={handleEmpty}>
-                Empty Basket
-              </Button>
-            </Box> */}
+          
             <Box width={"45%"} border="1px solid #e8e8e8 ">
               <Flex
                 justifyContent={"space-between"}
