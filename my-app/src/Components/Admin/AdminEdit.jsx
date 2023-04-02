@@ -42,7 +42,7 @@ const AdminEdit=()=>{
 
   const handleSubmit=(e)=>{
     e.preventDefault();
-     axios.patch(`http://localhost:8080/men/${id}`,product)
+     axios.patch(`https://lifestyle-mock-server-api.onrender.com/men/${id}`,product)
      .then((res)=>{
         toast({
             title: 'Product Edited Success',
@@ -60,7 +60,7 @@ const AdminEdit=()=>{
   }
 
   useEffect(()=>{
-    axios.get(`http://localhost:8080/men/${id}`)
+    axios.get(`https://lifestyle-mock-server-api.onrender.com/men/${id}`)
     .then((res)=>{
         setProduct(res.data)
         console.log(res.data)

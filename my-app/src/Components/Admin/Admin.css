@@ -22,14 +22,14 @@
     text-align: center;
     align-items: center;
     gap:20px;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     font-size: 20px;
     font-weight: bold;
-    justify-content:space-between;
   padding: auto;
   margin: auto;
     /* margin: auto; */
 }
+
 
 .SidebarList{
     height: auto;
@@ -45,7 +45,8 @@
     flex-direction:row;
     cursor: pointer;
     gap: 10px;
-    border: 1px solid wheat;
+    background-color: white;
+    /* border: 1px solid wheat; */
     text-align: center;
 }
 
