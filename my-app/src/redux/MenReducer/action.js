@@ -3,7 +3,7 @@ import { MEN_REQUEST_FAILURE, MEN_REQUEST_PENDING, MEN_REQUEST_SUCCESS, WOMEN_RE
 
 export const getmens=(paramObj)=>(dispatch)=>{
     dispatch({type:MEN_REQUEST_PENDING})
-    axios.get(`https://bright-pear-lizard.cyclic.app/men?_limit=12`,paramObj).then((res)=>{
+    axios.get(`https://lifestyle-mock-server-api.onrender.com/men?_limit=12`,paramObj).then((res)=>{
     let obj={
         data:res.data,
         total:res.headers.get("X-Total-Count")
