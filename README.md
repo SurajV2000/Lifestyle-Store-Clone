@@ -6,11 +6,11 @@ Lifestyle is India's leading fashion destination for the latest trends. Part of 
 
 
 ## Authors
-- [@SurajV2000](https://github.com/SurajV2000)
-- [@vaibhav7895](https://github.com/vaibhav7895)
-- [@Shubhangisaini205](https://github.com/Shubhangisaini205)
-- [@ttushar2622](https://github.com/ttushar2622)
-- [@Nitinjambal](https://github.com/Nitinjambal)
+- [@SurajV2000](https://github.com/SurajV2000) - Team lead
+- [@vaibhav7895](https://github.com/vaibhav7895) - Member
+- [@Shubhangisaini205](https://github.com/Shubhangisaini205) - Member
+- [@ttushar2622](https://github.com/ttushar2622) - Member
+- [@Nitinjambal](https://github.com/Nitinjambal) - Member
 
 
 
