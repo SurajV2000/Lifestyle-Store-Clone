@@ -4,6 +4,8 @@ Deployed-Link- https://outfitstore.vercel.app/
 
 
 Lifestyle is India's leading fashion destination for the latest trends. Part of Dubai based retail and hospitality conglomerate - The Landmark Group, Lifestyle brings multiple categories including men, women and kids’ apparel, footwear, handbags, fashion accessories and beauty under the convenience of a single roof.
+
+
 ![outift](https://user-images.githubusercontent.com/91380941/229769911-813db0f5-375a-4242-a311-384c917c3c7b.png)
 
 ## Authors
