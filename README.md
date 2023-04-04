@@ -25,6 +25,7 @@ Lifestyle is India's leading fashion destination for the latest trends. Part of 
 - Increase or decrease the quantity, as well as delete the item from the card
 - Check out the payment page and confirm the order
 - Admin ascess to add/modify products
+- Whole website is fully responsive
 
 
 ## Tech Stack
